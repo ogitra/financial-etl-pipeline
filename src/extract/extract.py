@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 RAW_DIR = "../data/raw"
-PROCESSED_PATH = "data/processed/balancos_processed.csv"
+PROCESSED_PATH = "../data/processed/balancos_processed.csv"
 
 
 def load_raw_data(csv_path: str) -> pd.DataFrame:

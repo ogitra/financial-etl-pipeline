@@ -2,10 +2,10 @@ import os
 import sqlite3
 import pandas as pd
 
-DIM_EMP_PATH = "data/processed/dim_empresa.csv"
-DIM_CONTA_PATH = "data/processed/dim_conta.csv"
-FATO_PATH = "data/processed/fato_balanco.csv"
-DB_PATH = "data/warehouse/balanco_dw.db"
+DIM_EMP_PATH = "../data/processed/dim_empresa.csv"
+DIM_CONTA_PATH = "../data/processed/dim_conta.csv"
+FATO_PATH = "../data/processed/fato_balanco.csv"
+DB_PATH = "../data/warehouse/balanco_dw.db"
 
 
 def load_csv(path: str) -> pd.DataFrame:

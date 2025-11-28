@@ -1,10 +1,10 @@
 import os
 import pandas as pd
 
-PROCESSED_PATH = "data/processed/balancos_processed.csv"
-DIM_EMP_PATH = "data/processed/dim_empresa.csv"
-DIM_CONTA_PATH = "data/processed/dim_conta.csv"
-FATO_PATH = "data/processed/fato_balanco.csv"
+PROCESSED_PATH = "../data/processed/balancos_processed.csv"
+DIM_EMP_PATH = "../data/processed/dim_empresa.csv"
+DIM_CONTA_PATH = "../data/processed/dim_conta.csv"
+FATO_PATH = "../data/processed/fato_balanco.csv"
 
 
 def load_processed(csv_path: str) -> pd.DataFrame:
