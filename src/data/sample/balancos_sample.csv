@@ -1,0 +1,101 @@
+id_empresa,nome_empresa,data_fechamento,id_conta,codigo_conta,descricao_conta,valor
+1894,Rio Diesel,2023-12-31,333,3.04,Custo de bens e/ou serviços vendidos,-143649000
+11320,Solaris,2020-12-31,375,3.18,Lucro/Prejuízo do período,-82000
+22784,Mobly,2022-12-31,178,2.01,Passivo circulante,191278000
+9202,Tristão Companhia de Comércio Exterior,2020-12-31,347,3.07,Resultado antes do resultado financeiro e dos tributos,210416000
+5565,First,2021-12-31,473,6.03,Caixa líquido das atividades de financiamento,11447000
+24632,Bravium,2021-12-31,230,2.02,Passivo não circulante,571000
+22118,Agrofel,2022-12-31,230,2.02,Passivo não circulante,172822000
+24370,Ferrari Zagatto,2022-12-31,178,2.01,Passivo circulante,467563000
+1884,Rio - Bahia Veículos,2023-12-31,55,1,Ativo total,79962000
+11320,"Mills Pesados Locação, Serviços e Logística",2022-12-31,55,1,Ativo total,399532000
+2260,HSJ Comercial,2021-12-31,333,3.04,Custo de bens e/ou serviços vendidos,-117551000
+10187,Frisa Comercial,2023-12-31,103,1.02,Ativo não circulante,8431000
+17442,HTK Lentes Oftálmicas,2020-12-31,56,1.01,Ativo circulante,44903000
+622,Sojitz,2021-03-31,57,1.01.01,Caixa e equivalentes de caixa,84834000
+1255,Distribuidora Fartura,2023-12-31,332,3.03,Receita líquida de vendas e/ou serviços,1298490000
+14311,Piramidal,2021-12-31,332,3.03,Receita líquida de vendas e/ou serviços,855011000
+4056,Cacique,2023-12-31,56,1.01,Ativo circulante,730583000
+1581,BR Supply,2021-12-31,347,3.07,Resultado antes do resultado financeiro e dos tributos,25972000
+15198,Allied,2023-12-31,56,1.01,Ativo circulante,2289747000
+16534,RodOil,2022-12-31,55,1,Ativo total,831108000
+7288,3tentos,2023-12-31,57,1.01.01,Caixa e equivalentes de caixa,1028483000
+6072,Armazém Paraíba,2020-12-31,56,1.01,Ativo circulante,23290682
+24403,Automob,2021-12-31,332,3.03,Receita líquida de vendas e/ou serviços,728940000
+16717,Moageira Irati Cereais,2022-03-31,56,1.01,Ativo circulante,150293000
+14915,Vogel,2023-12-31,332,3.03,Receita líquida de vendas e/ou serviços,688587000
+14341,Mafra Hospitalar,2020-12-31,73,1.01.04,Aplicações financeiras,97500000
+9202,Tristão Comércio Exterior,2022-12-31,103,1.02,Ativo não circulante,200804000
+5734,Farmácias Pague Menos,2023-12-31,57,1.01.01,Caixa e equivalentes de caixa,438500000
+2399,Marisa,2022-12-31,421,6.01,Caixa líquido das atividades operacionais,495970000
+912,Sumitomo Corporation do Brasil,2021-12-31,178,2.01,Passivo circulante,13721000
+1692,JS Peças,2020-12-31,333,3.04,Custo de bens e/ou serviços vendidos,-202604554
+24627,BR Autoparts,2022-12-31,56,1.01,Ativo circulante,561771495
+3913,Magalu,2020-12-31,347,3.07,Resultado antes do resultado financeiro e dos tributos,824576000
+1199,Brasdiesel,2021-12-31,178,2.01,Passivo circulante,72111000
+12478,Companhia Cief de Ferro e Aço,2021-12-31,57,1.01.01,Caixa e equivalentes de caixa,125803
+6810,Jorlan BH,2020-12-31,56,1.01,Ativo circulante,50993000
+17119,Terras de Aventura Indústria de Artigos Esportivos,2021-12-31,103,1.02,Ativo não circulante,168011000
+195,MCC,2023-12-31,332,3.03,Receita líquida de vendas e/ou serviços,6134124
+982,Amisa,2023-12-31,375,3.18,Lucro/Prejuízo do período,49881
+1820,Cedisa,2020-12-31,347,3.07,Resultado antes do resultado financeiro e dos tributos,72369738
+1495,Rodobens Veículos Comerciais SP,2020-12-31,178,2.01,Passivo circulante,112742000
+19154,Semantix,2021-12-31,56,1.01,Ativo circulante,111686000
+21574,Natura &Co,2020-12-31,230,2.02,Passivo não circulante,17370903000
+19161,Grupo de Moda Soma,2022-12-31,332,3.03,Receita líquida de vendas e/ou serviços,4870520000
+655,Importadora Bagé,2021-12-31,473,6.03,Caixa líquido das atividades de financiamento,-2753700
+8456,Pro Shows Comércio de Eletro Eletrônicos,2023-12-31,55,1,Ativo total,78952000
+18429,Incrível Comércio de Bebidas e Alimentos,2023-12-31,333,3.04,Custo de bens e/ou serviços vendidos,-3164000
+1692,J.S. Peças,2021-12-31,286,2.03,Patrimônio líquido,54904487
+16978,AWM Holding,2022-12-31,473,6.03,Caixa líquido das atividades de financiamento,-14001860
+13253,Kicaldo,2022-12-31,347,3.07,Resultado antes do resultado financeiro e dos tributos,81092000
+17641,Congebras Food Service,2020-12-31,286,2.03,Patrimônio líquido,202570000
+2399,Lojas Marisa,2023-12-31,375,3.18,Lucro/Prejuízo do período,-350987000
+3214,Serglobal,2022-12-31,332,3.03,Receita líquida de vendas e/ou serviços,8949366000
+1528,Recapagem e Pneus Santa Helena,2021-12-31,375,3.18,Lucro/Prejuízo do período,4306973
+14341,Mafra Hospitalar,2023-12-31,56,1.01,Ativo circulante,5974663000
+5687,Distribuidora Automotiva,2021-12-31,335,3.06,Despesas/Receitas operacionais,-287938014
+1302,RDG Aços do Brasil,2023-12-31,462,6.02,Caixa líquido das atividades de investimento,-4659359
+22349,D1000,2020-12-31,462,6.02,Caixa líquido das atividades de investimento,-35644000
+5322,Oxford Comércio e Participações,2020-12-31,103,1.02,Ativo não circulante,249184000
+14311,Piramidal,2021-12-31,286,2.03,Patrimônio líquido,158366000
+3755,Armazens Martins,2020-12-31,103,1.02,Ativo não circulante,434744000
+18149,Saraiva Educação,2021-12-31,335,3.06,Despesas/Receitas operacionais,-37171000
+2228,Tramontina Sudeste,2020-12-31,347,3.07,Resultado antes do resultado financeiro e dos tributos,70294285
+24584,Copagri,2021-12-31,230,2.02,Passivo não circulante,10415000
+1692,J.S. Auto Peças,2021-12-31,332,3.03,Receita líquida de vendas e/ou serviços,356241779
+5472,Terramar Investimentos,2021-12-31,73,1.01.04,Aplicações financeiras,29475000
+14319,Alibem,2022-12-31,73,1.01.04,Aplicações financeiras,103207000
+18652,Refrigelo Climatização de Ambientes,2020-12-31,286,2.03,Patrimônio líquido,156491000
+5402,Kimoto,2021-12-31,103,1.02,Ativo não circulante,502808432
+9217,Líder B.H. Veículos,2023-12-31,55,1,Ativo total,232511819
+24123,Supermercados ABC,2022-12-31,333,3.04,Custo de bens e/ou serviços vendidos,-2328056000
+2905,Dirmave,2020-12-31,55,1,Ativo total,27965000
+3509,Cisa,2022-12-31,56,1.01,Ativo circulante,2304552000
+1189,Rodobens Veículos Comerciais Cirasa,2020-12-31,57,1.01.01,Caixa e equivalentes de caixa,55254000
+11492,Broto Legal,2020-12-31,333,3.04,Custo de bens e/ou serviços vendidos,-384234000
+22662,Grupo Big Brasil,2021-12-31,55,1,Ativo total,17887000000
+9476,RBG Therapeutic World,2021-12-31,57,1.01.01,Caixa e equivalentes de caixa,14426541
+4383,Ceasa PR,2020-12-31,462,6.02,Caixa líquido das atividades de investimento,-4805000
+18195,Fortbras Autopeças,2021-12-31,178,2.01,Passivo circulante,567611000
+5767,A.R. Colombo,2023-12-31,462,6.02,Caixa líquido das atividades de investimento,-51162000
+18652,Leveros,2020-12-31,178,2.01,Passivo circulante,211676000
+20888,Fast Shop,2022-12-31,421,6.01,Caixa líquido das atividades operacionais,404693000
+5542,Giassi Administradora de Bens,2022-12-31,230,2.02,Passivo não circulante,23306000
+1931,Cofermeta,2022-12-31,55,1,Ativo total,189023901
+18358,Dauriti Distribuidora,2020-12-31,286,2.03,Patrimônio líquido,32606534
+9231,Superdelli,2021-12-31,56,1.01,Ativo circulante,34596000
+16978,AWM Participações Societárias,2021-12-31,178,2.01,Passivo circulante,820610
+7205,Lago San,2021-12-31,332,3.03,Receita líquida de vendas e/ou serviços,294905000
+16534,RodOil,2022-12-31,178,2.01,Passivo circulante,263505000
+18195,Fortbras Autopeças,2022-12-31,333,3.04,Custo de bens e/ou serviços vendidos,-1670164000
+16544,Daitan,2021-12-31,57,1.01.01,Caixa e equivalentes de caixa,22580000
+4423,Tratornew,2021-12-31,230,2.02,Passivo não circulante,17587351
+1884,Rodobens Veículos Comerciais Bahia,2020-12-31,375,3.18,Lucro/Prejuízo do período,1803000
+3913,Magazine Luiza,2022-12-31,333,3.04,Custo de bens e/ou serviços vendidos,-26860106000
+4056,Cacique,2022-12-31,347,3.07,Resultado antes do resultado financeiro e dos tributos,1164000
+22096,Quero-Quero,2023-12-31,462,6.02,Caixa líquido das atividades de investimento,-79588000
+24584,Copagri,2022-12-31,103,1.02,Ativo não circulante,120570000
+17540,Terranuts,2023-12-31,473,6.03,Caixa líquido das atividades de financiamento,81870000
+6359,Eisa,2021-12-31,230,2.02,Passivo não circulante,278092000
+283,Mitsubishi,2020-12-31,333,3.04,Custo de bens e/ou serviços vendidos,-308827000
