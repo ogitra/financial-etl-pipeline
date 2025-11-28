@@ -1,13 +1,16 @@
 import os
 import pandas as pd
 
+RAW_DIR = "../data/raw"
+PROCESSED_PATH = "data/processed/balancos_processed.csv"
+
 
 def load_raw_data(csv_path: str) -> pd.DataFrame:
     """
     Carrega o CSV bruto e retorna um DataFrame.
     - Verifica se o arquivo existe.
     - Lê o CSV usando separador ';' e encoding UTF-8.
-    - Loga quantidade de linhas carregadas.
+
     """
     if not os.path.exists(csv_path):
         raise FileNotFoundError(f"Arquivo não encontrado: {csv_path}")
@@ -32,35 +35,27 @@ def save_processed(df: pd.DataFrame, output_path: str) -> None:
     df.to_csv(output_path, index=False, encoding="utf-8")
 
 
-if __name__ == "__main__":
+def run_extract():
+    """
+    Executa a etapa Extract.
+    - Busca arquivos CSV no diretório raw.
+    - Se não houver nenhum, interrompe o processo (não há dados para extrair).
+    - Se houver mais de um, também interrompe (evita ambiguidade: o ETL deve rodar com apenas um arquivo por vez).
+    - Caso exista exatamente um arquivo, define o caminho completo para ser usado na leitura.
 
-    raw_dir = "data/raw"
-
-    #   Busca arquivos CSV no diretório raw.
-    # - Se não houver nenhum, interrompe o processo (não há dados para extrair).
-    # - Se houver mais de um, também interrompe (evita ambiguidade: o ETL deve rodar com apenas um arquivo por vez).
-    # - Caso exista exatamente um arquivo, define o caminho completo para ser usado na leitura.
-
-    arquivos = [f for f in os.listdir(raw_dir) if f.endswith(".csv")]
+    """
+    arquivos = [f for f in os.listdir(RAW_DIR) if f.endswith(".csv")]
 
     if not arquivos:
         raise FileNotFoundError("Nenhum arquivo CSV encontrado em data/raw/")
 
-if len(arquivos) > 1:
-    raise ValueError(
-        f"Mais de um CSV encontrado em data/raw/. "
-        f"Mantenha apenas um arquivo. Encontrados: {arquivos}"
-    )
+    if len(arquivos) > 1:
+        raise ValueError(
+            f"Mais de um CSV encontrado em data/raw/. "
+            f"Mantenha apenas um arquivo. Encontrados: {arquivos}"
+        )
 
-RAW_PATH = os.path.join(raw_dir, arquivos[0])
-
-# Caminho de saída para o arquivo processado
-
-PROCESSED_PATH = "data/processed/balancos_processed.csv"
-
-# Executa etapa de Extract
-
-df_raw = load_raw_data(RAW_PATH)
-save_processed(df_raw, PROCESSED_PATH)
-
-print("[OK] Extract finalizado com sucesso.")
+    raw_path = os.path.join(RAW_DIR, arquivos[0])
+    df_raw = load_raw_data(raw_path)
+    save_processed(df_raw, PROCESSED_PATH)
+    print("[OK] Extract finalizado com sucesso.")

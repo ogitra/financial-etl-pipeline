@@ -1,6 +1,11 @@
 import os
 import pandas as pd
 
+PROCESSED_PATH = "data/processed/balancos_processed.csv"
+DIM_EMP_PATH = "data/processed/dim_empresa.csv"
+DIM_CONTA_PATH = "data/processed/dim_conta.csv"
+FATO_PATH = "data/processed/fato_balanco.csv"
+
 
 def load_processed(csv_path: str) -> pd.DataFrame:
     """
@@ -68,28 +73,22 @@ def create_fato_balanco(df: pd.DataFrame) -> pd.DataFrame:
 
 def save_output(df: pd.DataFrame, path: str):
     """
-    Salva df em CSV no caminho especificado.
+    Salva DataFrame em CSV no caminho especificado.
     - Cria diretório se não existir.
     - Remove índice para manter arquivo limpo.
     """
-
     os.makedirs(os.path.dirname(path), exist_ok=True)
     df.to_csv(path, index=False)
     print(f"[OK] Arquivo salvo em: {path}")
 
 
-if __name__ == "__main__":
-    # Caminhos de entrada e saída
-
-    INPUT = "data/processed/balancos_processed.csv"
-    OUTPUT_FACT = "data/processed/fato_balanco.csv"
-    OUTPUT_DIM_EMP = "data/processed/dim_empresa.csv"
-    OUTPUT_DIM_CONTA = "data/processed/dim_conta.csv"
-    OUTPUT_SAMPLE = "data/sample/balancos_sample.csv"
-
+def run_transform():
+    """
+    Executa a etapa Transform: aplica padronização, cria dimensões e fato.
+    """
     # Pipeline de transformação
 
-    df = load_processed(INPUT)
+    df = load_processed(PROCESSED_PATH)
     df = standardize_types(df)
     df = rename_columns(df)
 
@@ -99,12 +98,12 @@ if __name__ == "__main__":
     dim_conta = create_dim_conta(df)
     fato = create_fato_balanco(df)
 
-    save_output(dim_empresa, OUTPUT_DIM_EMP)
-    save_output(dim_conta, OUTPUT_DIM_CONTA)
-    save_output(fato, OUTPUT_FACT)
+    save_output(dim_empresa, DIM_EMP_PATH)
+    save_output(dim_conta, DIM_CONTA_PATH)
+    save_output(fato, FATO_PATH)
 
     # Amostra aleatória para versionamento no GitHub
 
-    save_output(df.sample(n=100, random_state=42), OUTPUT_SAMPLE)
+    save_output(df.sample(n=100, random_state=42), "data/sample/balancos_sample.csv")
 
     print("\n[OK] Transform finalizado com sucesso.")
