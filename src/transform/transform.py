@@ -104,6 +104,6 @@ def run_transform():
 
     # Amostra aleatória para versionamento no GitHub
 
-    save_output(df.sample(n=100, random_state=42), "data/sample/balancos_sample.csv")
+    save_output(df.sample(n=100, random_state=42), "../data/sample/balancos_sample.csv")
 
     print("\n[OK] Transform finalizado com sucesso.")
