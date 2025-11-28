@@ -5,8 +5,12 @@ __pycache__/
 
 # Data files
 data/raw/*
+!data/raw/.gitkeep
+
 data/processed/*
-data/sample/*
+!data/processed/.gitkeep
+
+
 
 # OS files
 .DS_Store
