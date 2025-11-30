@@ -5,6 +5,7 @@ PROCESSED_PATH = "../data/processed/balancos_processed.csv"
 DIM_EMP_PATH = "../data/processed/dim_empresa.csv"
 DIM_CONTA_PATH = "../data/processed/dim_conta.csv"
 FATO_PATH = "../data/processed/fato_balanco.csv"
+WIDE_PATH = "../data/processed/wide_balanco.csv"
 
 
 def load_processed(csv_path: str) -> pd.DataFrame:
@@ -50,6 +51,26 @@ def rename_columns(df: pd.DataFrame) -> pd.DataFrame:
     )
 
 
+def create_pivot_table(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Converte o DataFrame (long format) para formato wide, onde cada conta contábil
+    vira uma coluna e cada linha representa empresa + data.
+    """
+    print("[INFO] Criando tabela pivotada (wide format)...")
+
+    pivot_df = df.pivot_table(
+        index=["nome_empresa", "data_fechamento"],
+        columns="descricao_conta",
+        values="valor",
+        aggfunc="sum",
+    )
+
+    pivot_df = pivot_df.reset_index()
+
+    print("[OK] Pivot criado com sucesso!")
+    return pivot_df
+
+
 def create_dim_empresa(df: pd.DataFrame) -> pd.DataFrame:
     """
     Cria a dimensão de empresas sem duplicações, seleciona apenas id e nome.
@@ -92,20 +113,35 @@ def run_transform():
     df = standardize_types(df)
     df = rename_columns(df)
 
-    # Criação das tabelas dimensão e fato
+    # Criação das tabelas wide,dimensão e fato
 
+    wide = create_pivot_table(df)
     dim_empresa = create_dim_empresa(df)
     dim_conta = create_dim_conta(df)
     fato = create_fato_balanco(df)
 
+    save_output(wide, WIDE_PATH)
     save_output(dim_empresa, DIM_EMP_PATH)
     save_output(dim_conta, DIM_CONTA_PATH)
     save_output(fato, FATO_PATH)
 
-    # Amostra aleatória para versionamento no GitHub
+    # Samples das tabelas criadas
 
     save_output(
         df.sample(n=100, random_state=42), "../data/sample/raw_balancos_sample.csv"
+    )
+    save_output(
+        wide.sample(n=100, random_state=42), "../data/sample/wide_balancos_sample.csv"
+    )
+    save_output(
+        dim_empresa.sample(n=100, random_state=42),
+        "../data/sample/dim_empresa_sample.csv",
+    )
+    save_output(
+        dim_conta.sample(n=100, random_state=42), "../data/sample/dim_conta_sample.csv"
+    )
+    save_output(
+        fato.sample(n=100, random_state=42), "../data/sample/fato_balanco_sample.csv"
     )
 
     print("\n[OK] Transform finalizado com sucesso.")
