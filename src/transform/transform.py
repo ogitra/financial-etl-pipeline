@@ -127,21 +127,9 @@ def run_transform():
 
     # Samples das tabelas criadas
 
-    save_output(
-        df.sample(n=100, random_state=42), "../data/sample/raw_balancos_sample.csv"
-    )
-    save_output(
-        wide.sample(n=100, random_state=42), "../data/sample/wide_balancos_sample.csv"
-    )
-    save_output(
-        dim_empresa.sample(n=100, random_state=42),
-        "../data/sample/dim_empresa_sample.csv",
-    )
-    save_output(
-        dim_conta.sample(n=100, random_state=42), "../data/sample/dim_conta_sample.csv"
-    )
-    save_output(
-        fato.sample(n=100, random_state=42), "../data/sample/fato_balanco_sample.csv"
-    )
+    save_output(df.sample(n=100), "../data/sample/raw_balancos_sample.csv")
+    save_output(wide.sample(n=100), "../data/sample/wide_balancos_sample.csv")
+    save_output(dim_empresa.sample(n=100), "../data/sample/dim_empresa_sample.csv")
+    save_output(fato.sample(n=100), "../data/sample/fato_balanco_sample.csv")
 
     print("\n[OK] Transform finalizado com sucesso.")
