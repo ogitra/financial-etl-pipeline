@@ -1,0 +1,29 @@
+import pandas as pd
+
+
+def standardize_types(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Padroniza tipos das principais colunas.
+    """
+    df["DataFechamento"] = pd.to_datetime(df["DataFechamento"], errors="coerce")
+    df["IdEmpresa"] = df["IdEmpresa"].astype(int)
+    df["IdConta"] = df["IdConta"].astype(int)
+    df["ValorPadronizado"] = df["ValorPadronizado"].astype("int64")
+    return df
+
+
+def rename_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Renomeia colunas para padrão snake_case.
+    """
+    return df.rename(
+        columns={
+            "IdEmpresa": "id_empresa",
+            "NomeFinal": "nome_empresa",
+            "DataFechamento": "data_fechamento",
+            "IdConta": "id_conta",
+            "CodigoConta": "codigo_conta",
+            "ContaDescricao": "descricao_conta",
+            "ValorPadronizado": "valor",
+        }
+    )
