@@ -9,8 +9,7 @@ def load_raw_data(csv_path: str) -> pd.DataFrame:
     """
     Carrega o CSV bruto e retorna um DataFrame.
     - Verifica se o arquivo existe.
-    - Lê o CSV usando separador ';' e encoding UTF-8.
-
+    - Converte em DataFrame padronizado
     """
     if not os.path.exists(csv_path):
         raise FileNotFoundError(f"Arquivo não encontrado: {csv_path}")
@@ -40,9 +39,8 @@ def run_extract():
     Executa a etapa Extract.
     - Busca arquivos CSV no diretório raw.
     - Se não houver nenhum, interrompe o processo (não há dados para extrair).
-    - Se houver mais de um, também interrompe (evita ambiguidade: o ETL deve rodar com apenas um arquivo por vez).
+    - Se houver mais de um, também interrompe
     - Caso exista exatamente um arquivo, define o caminho completo para ser usado na leitura.
-
     """
     arquivos = [f for f in os.listdir(RAW_DIR) if f.endswith(".csv")]
 
@@ -59,3 +57,5 @@ def run_extract():
     df_raw = load_raw_data(raw_path)
     save_processed(df_raw, PROCESSED_PATH)
     print("[OK] Extract finalizado com sucesso.")
+
+    return df_raw

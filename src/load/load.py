@@ -3,7 +3,7 @@ import sqlite3
 import pandas as pd
 
 # Caminhos dos samples
-SAMPLES_DIR = "../data/samples"
+SAMPLES_DIR = "../data/sample"
 DIM_EMP_SAMPLE = os.path.join(SAMPLES_DIR, "dim_empresa_sample.csv")
 DIM_CONTA_SAMPLE = os.path.join(SAMPLES_DIR, "dim_conta_sample.csv")
 FATO_SAMPLE = os.path.join(SAMPLES_DIR, "fato_sample.csv")
