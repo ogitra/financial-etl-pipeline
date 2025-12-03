@@ -1,0 +1,17 @@
+id_conta,codigo_conta,descricao_conta
+103,1.02,Ativo não circulante
+462,6.02,Caixa líquido das atividades de investimento
+332,3.03,Receita líquida de vendas e/ou serviços
+57,1.01.01,Caixa e equivalentes de caixa
+286,2.03,Patrimônio líquido
+347,3.07,Resultado antes do resultado financeiro e dos tributos
+178,2.01,Passivo circulante
+56,1.01,Ativo circulante
+473,6.03,Caixa líquido das atividades de financiamento
+55,1,Ativo total
+73,1.01.04,Aplicações financeiras
+335,3.06,Despesas/Receitas operacionais
+333,3.04,Custo de bens e/ou serviços vendidos
+421,6.01,Caixa líquido das atividades operacionais
+375,3.18,Lucro/Prejuízo do período
+230,2.02,Passivo não circulante
