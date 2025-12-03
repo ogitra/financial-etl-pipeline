@@ -27,3 +27,10 @@ def rename_columns(df: pd.DataFrame) -> pd.DataFrame:
             "ValorPadronizado": "valor",
         }
     )
+
+
+def run_standardize(df: pd.DataFrame) -> pd.DataFrame:
+    """Wrapper que aplica padronização de tipos e renomeação de colunas."""
+    df = standardize_types(df)
+    df = rename_columns(df)
+    return df

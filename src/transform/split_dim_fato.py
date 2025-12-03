@@ -20,3 +20,15 @@ def create_fato(df):
     Cria a tabela fato de balanço. (valores por empresa/conta/data).
     """
     return df[["id_empresa", "id_conta", "data_fechamento", "valor"]]
+
+
+def run_split(df):
+    """
+    Wrapper que cria as tabelas de dimensão e fato a partir do DataFrame padronizado.
+    Retorna um dicionário com os três DataFrames.
+    """
+    dim_empresa = create_dim_empresa(df)
+    dim_conta = create_dim_conta(df)
+    fato = create_fato(df)
+
+    return {"dim_empresa": dim_empresa, "dim_conta": dim_conta, "fato": fato}
