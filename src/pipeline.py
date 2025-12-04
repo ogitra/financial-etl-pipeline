@@ -1,5 +1,3 @@
-import os
-import pandas as pd
 from extract import run_extract
 from transform.standardize import run_standardize
 from transform.split_dim_fato import run_split
@@ -10,7 +8,6 @@ from load.load import run_load
 from utils.save_sample import save_sample
 
 SAMPLES_DIR = "../data/sample"
-PROCESSED_PATH = "../data/processed/balancos_processed.csv"
 
 
 def run_pipeline():
