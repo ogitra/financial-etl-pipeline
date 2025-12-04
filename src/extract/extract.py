@@ -63,6 +63,5 @@ def run_extract():
     raw_path = os.path.join(RAW_DIR, arquivos[0])
     df_raw = load_raw_data(raw_path)
     save_processed(df_raw, PROCESSED_PATH)
-    logger.info("Extract finalizado com sucesso ✅")
 
     return df_raw

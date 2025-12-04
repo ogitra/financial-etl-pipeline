@@ -1,4 +1,5 @@
 import pandas as pd
+from utils.logger import logger
 
 
 def calculate_evolution(pivot_df: pd.DataFrame) -> pd.DataFrame:
@@ -51,5 +52,5 @@ def calculate_evolution(pivot_df: pd.DataFrame) -> pd.DataFrame:
     ].pct_change()
 
     evolution = evolution.round(2)
-    logger.info("[SUCCESS] Indicadores de evolução calculados com sucesso!")
+
     return evolution

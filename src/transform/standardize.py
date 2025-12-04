@@ -1,4 +1,5 @@
 import pandas as pd
+from utils.logger import logger
 
 
 def standardize_types(df: pd.DataFrame) -> pd.DataFrame:
@@ -31,6 +32,8 @@ def rename_columns(df: pd.DataFrame) -> pd.DataFrame:
 
 def run_standardize(df: pd.DataFrame) -> pd.DataFrame:
     """Wrapper que aplica padronização de tipos e renomeação de colunas."""
+    logger.info("Iniciando a padronização do arquivo bruto...")
     df = standardize_types(df)
     df = rename_columns(df)
+    logger.info("[OK] Normalização concluída!")
     return df

@@ -103,8 +103,4 @@ def calculate_indicators(pivot_df: pd.DataFrame) -> pd.DataFrame:
 
     indicators = indicators.round(2)
 
-    logger.info(
-        "[SUCCESS] Todos os indicadores financeiros foram calculados com sucesso!"
-    )
-
     return indicators

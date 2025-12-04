@@ -1,4 +1,5 @@
 import pandas as pd
+from utils.logger import logger
 
 
 def create_dim_empresa(df):
@@ -27,8 +28,10 @@ def run_split(df):
     Wrapper que cria as tabelas de dimensão e fato a partir do DataFrame padronizado.
     Retorna um dicionário com os três DataFrames.
     """
+    logger.info("Iniciando a separação para as tabelas fato e dimensão...")
     dim_empresa = create_dim_empresa(df)
     dim_conta = create_dim_conta(df)
     fato = create_fato(df)
 
+    logger.info("[OK] Separação concluída! ")
     return {"dim_empresa": dim_empresa, "dim_conta": dim_conta, "fato": fato}

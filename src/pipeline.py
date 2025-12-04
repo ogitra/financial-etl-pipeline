@@ -19,6 +19,7 @@ def run_pipeline():
     # 1. Extract
     df_raw = run_extract()
     save_sample(df_raw, SAMPLES_DIR, "extract")
+    logger.info("Extract finalizado com sucesso ✅")
 
     # 2. Transform
     df_std = run_standardize(df_raw)
@@ -32,6 +33,8 @@ def run_pipeline():
     wide_df = create_pivot_table(df_std)
     save_sample(wide_df, SAMPLES_DIR, "wide")
 
+    logger.info("Transform finalizado com sucesso ✅")
+
     # 3. Analytics
     indicators_df = calculate_indicators(wide_df)
     save_sample(indicators_df, SAMPLES_DIR, "indicators")
@@ -39,8 +42,12 @@ def run_pipeline():
     evolution_df = calculate_evolution(wide_df)
     save_sample(evolution_df, SAMPLES_DIR, "evolution")
 
+    logger.info("Analytics finalizado com sucesso ✅")
+
     # 4. Load (carrega os samples no banco)
     run_load()
+
+    logger.info("Load finalizado com sucesso ✅")
 
     logger.info("============================================")
     logger.info("✅ Pipeline Financeiro finalizado com sucesso")

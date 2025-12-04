@@ -18,4 +18,4 @@ def save_sample(df: pd.DataFrame, output_dir: str, sample_name: str):
     sample_df = df.sample(frac=1, random_state=1).head(100)
     sample_df.to_csv(output_path, index=False)
 
-    logger.info(f"[OK] Sample salvo em: {output_path}")
+    logger.info(f"Sample salvo em: {output_path}")
