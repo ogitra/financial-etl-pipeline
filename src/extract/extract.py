@@ -21,7 +21,7 @@ def load_raw_data(csv_path: str) -> pd.DataFrame:
     return df
 
 
-def save_processed(df: pd.DataFrame, output_path: str) -> None:
+def save_processed(df: pd.DataFrame, output_path: str):
     """
     Salva o dataframe no diretório processed.
     - Cria diretório de saída se não existir.
