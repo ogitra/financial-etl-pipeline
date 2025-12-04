@@ -1,0 +1,8 @@
+data\sample\dim_conta_sample.csv
+data\sample\dim_empresa_sample.csv
+data\sample\evolution_sample.csv
+data\sample\extract_sample.csv
+data\sample\fato_sample.csv
+data\sample\indicators_sample.csv
+data\sample\standardize_sample.csv
+data\sample\wide_sample.csv

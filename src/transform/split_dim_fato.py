@@ -34,4 +34,4 @@ def run_split(df):
     fato = create_fato(df)
 
     logger.info("[OK] Separação concluída! ")
-    return {"dim_empresa": dim_empresa, "dim_conta": dim_conta, "fato": fato}
+    return {"dim_company": dim_empresa, "dim_account": dim_conta, "fact_balance": fato}

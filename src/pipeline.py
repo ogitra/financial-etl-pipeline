@@ -31,16 +31,16 @@ def run_pipeline():
         save_sample(df_table, SAMPLES_DIR, name)
 
     wide_df = create_pivot_table(df_std)
-    save_sample(wide_df, SAMPLES_DIR, "wide")
+    save_sample(wide_df, SAMPLES_DIR, "wide_table")
 
     logger.info("Transform finalizado com sucesso ✅")
 
     # 3. Analytics
     indicators_df = calculate_indicators(wide_df)
-    save_sample(indicators_df, SAMPLES_DIR, "indicators")
+    save_sample(indicators_df, SAMPLES_DIR, "financial_indicators")
 
     evolution_df = calculate_evolution(wide_df)
-    save_sample(evolution_df, SAMPLES_DIR, "evolution")
+    save_sample(evolution_df, SAMPLES_DIR, "financial_evolution")
 
     logger.info("Analytics finalizado com sucesso ✅")
 
