@@ -6,7 +6,7 @@ def calculate_evolution(pivot_df: pd.DataFrame) -> pd.DataFrame:
     Recebe o arquivo em formato wide e cria um novo DataFrame contendo
     apenas identificadores (empresa, data) e os indicadores de evolução calculados.
     """
-    print("[INFO] Iniciando cálculo de evolução financeira...")
+    logger.info("Iniciando cálculo de evolução financeira...")
     evolution = pd.DataFrame()
     evolution["nome_empresa"] = pivot_df["nome_empresa"]
     evolution["data_fechamento"] = pivot_df["data_fechamento"]
@@ -17,7 +17,7 @@ def calculate_evolution(pivot_df: pd.DataFrame) -> pd.DataFrame:
     # ============================
     # CRESCIMENTO YoY
     # ============================
-    print("[INFO] Calculando crescimento YoY...")
+    logger.info("Calculando crescimento YoY...")
     evolution["crescimento_receita_yoy (%)"] = pivot_df.groupby("nome_empresa")[
         "Receita líquida de vendas e/ou serviços"
     ].pct_change()
@@ -45,11 +45,11 @@ def calculate_evolution(pivot_df: pd.DataFrame) -> pd.DataFrame:
     # ============================
     # VARIAÇÃO ENDIVIDAMENTO
     # ============================
-    print("[INFO] Calculando variação YoY do endividamento...")
+    logger.info("Calculando variação YoY do endividamento...")
     evolution["variacao_endividamento_yoy (p.p.)"] = pivot_df.groupby("nome_empresa")[
         "Passivo circulante"
     ].pct_change()
 
     evolution = evolution.round(2)
-    print("[SUCCESS] Indicadores de evolução calculados com sucesso!")
+    logger.info("[SUCCESS] Indicadores de evolução calculados com sucesso!")
     return evolution

@@ -19,7 +19,7 @@ def load_csv(path: str) -> pd.DataFrame:
     """Lê um arquivo CSV e retorna DataFrame."""
     if not os.path.exists(path):
         raise FileNotFoundError(f"Arquivo não encontrado: {path}")
-    print(f"[INFO] Lendo CSV: {path}")
+    logger.info(f"[INFO] Lendo CSV: {path}")
     return pd.read_csv(path)
 
 
@@ -27,7 +27,7 @@ def connect_db(db_path: str):
     """Cria (ou conecta) ao banco SQLite."""
     os.makedirs(os.path.dirname(db_path), exist_ok=True)
     conn = sqlite3.connect(db_path)
-    print(f"[OK] Conectado ao banco: {db_path}")
+    logger.info(f"[OK] Conectado ao banco: {db_path}")
     return conn
 
 
@@ -121,13 +121,13 @@ def create_tables(conn):
     )
 
     conn.commit()
-    print("[OK] Tabelas de samples criadas com sucesso.")
+    logger.info("[OK] Tabelas de samples criadas com sucesso.")
 
 
 def load_to_sqlite(df: pd.DataFrame, table_name: str, conn, if_exists="replace"):
     """Insere dados de um DataFrame no SQLite."""
     df.to_sql(table_name, conn, if_exists=if_exists, index=False)
-    print(f"[OK] Tabela carregada: {table_name} ({len(df)} registros)")
+    logger.info(f"[OK] Tabela carregada: {table_name} ({len(df)} registros)")
 
 
 def run_load():
@@ -155,4 +155,4 @@ def run_load():
     load_to_sqlite(df_evolution, "sample_evolution", conn)
 
     conn.close()
-    print("\n[OK] Load finalizado com sucesso!")
+    logger.info("[OK] Load finalizado com sucesso!")

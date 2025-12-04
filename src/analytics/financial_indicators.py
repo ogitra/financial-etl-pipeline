@@ -1,4 +1,5 @@
 import pandas as pd
+from utils.logger import logger
 
 
 def calculate_indicators(pivot_df: pd.DataFrame) -> pd.DataFrame:
@@ -6,7 +7,7 @@ def calculate_indicators(pivot_df: pd.DataFrame) -> pd.DataFrame:
     Recebe o arquivo em formato wide e cria um novo DataFrame contendo
     apenas identificadores (empresa, data) e os indicadores calculados
     """
-    print("[INFO] Iniciando cálculo de indicadores financeiros...")
+    logger.info("Iniciando cálculo de indicadores financeiros...")
     indicators = pd.DataFrame()
     indicators["nome_empresa"] = pivot_df["nome_empresa"]
     indicators["data_fechamento"] = pivot_df["data_fechamento"]
@@ -14,7 +15,7 @@ def calculate_indicators(pivot_df: pd.DataFrame) -> pd.DataFrame:
     # ============================
     # LIQUIDEZ
     # ============================
-    print("[INFO] Calculando indicadores de LIQUIDEZ...")
+    logger.info("Calculando indicadores de LIQUIDEZ...")
     indicators["liquidez_corrente (pontos)"] = (
         pivot_df["Ativo circulante"] / pivot_df["Passivo circulante"]
     )
@@ -26,12 +27,12 @@ def calculate_indicators(pivot_df: pd.DataFrame) -> pd.DataFrame:
     indicators["liquidez_imediata (pontos)"] = (
         pivot_df["Caixa e equivalentes de caixa"] / pivot_df["Passivo circulante"]
     )
-    print("[OK] Indicadores de LIQUIDEZ calculados.")
+    logger.info("[OK] Indicadores de LIQUIDEZ calculados.")
 
     # ============================
     # ESTRUTURA DE CAPITAL
     # ============================
-    print("[INFO] Calculando indicadores de ESTRUTURA DE CAPITAL...")
+    logger.info("Calculando indicadores de ESTRUTURA DE CAPITAL...")
     indicators["endividamento (pontos)"] = (
         pivot_df["Passivo circulante"] + pivot_df["Passivo não circulante"]
     ) / pivot_df["Ativo total"]
@@ -43,12 +44,12 @@ def calculate_indicators(pivot_df: pd.DataFrame) -> pd.DataFrame:
     indicators["composicao_endividamento (%)"] = pivot_df["Passivo circulante"] / (
         pivot_df["Passivo circulante"] + pivot_df["Passivo não circulante"]
     )
-    print("[OK] Indicadores de ESTRUTURA DE CAPITAL calculados.")
+    logger.info("[OK] Indicadores de ESTRUTURA DE CAPITAL calculados.")
 
     # ============================
     # RENTABILIDADE
     # ============================
-    print("[INFO] Calculando indicadores de RENTABILIDADE...")
+    logger.info("Calculando indicadores de RENTABILIDADE...")
     indicators["roe (%)"] = (
         pivot_df["Lucro/Prejuízo do período"] / pivot_df["Patrimônio líquido"]
     )
@@ -75,12 +76,12 @@ def calculate_indicators(pivot_df: pd.DataFrame) -> pd.DataFrame:
         pivot_df["Lucro/Prejuízo do período"]
         / pivot_df["Receita líquida de vendas e/ou serviços"]
     )
-    print("[OK] Indicadores de RENTABILIDADE calculados.")
+    logger.info("[OK] Indicadores de RENTABILIDADE calculados.")
 
     # ============================
     # FLUXOS DE CAIXA
     # ============================
-    print("[INFO] Calculando indicadores de FLUXOS DE CAIXA...")
+    logger.info("Calculando indicadores de FLUXOS DE CAIXA...")
     indicators["caixa_operacional_sobre_receita (%)"] = (
         pivot_df["Caixa líquido das atividades operacionais"]
         / pivot_df["Receita líquida de vendas e/ou serviços"]
@@ -98,10 +99,12 @@ def calculate_indicators(pivot_df: pd.DataFrame) -> pd.DataFrame:
     indicators["participacao_caixa (%)"] = (
         pivot_df["Caixa e equivalentes de caixa"] / pivot_df["Ativo total"]
     )
-    print("[OK] Indicadores de FLUXOS DE CAIXA calculados.")
+    logger.info("[OK] Indicadores de FLUXOS DE CAIXA calculados.")
 
     indicators = indicators.round(2)
 
-    print("[SUCCESS] Todos os indicadores financeiros foram calculados com sucesso!")
+    logger.info(
+        "[SUCCESS] Todos os indicadores financeiros foram calculados com sucesso!"
+    )
 
     return indicators

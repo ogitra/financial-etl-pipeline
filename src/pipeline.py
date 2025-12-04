@@ -6,14 +6,15 @@ from analytics.financial_indicators import calculate_indicators
 from analytics.financial_evolution import calculate_evolution
 from load.load import run_load
 from utils.save_sample import save_sample
+from utils.logger import logger
 
 SAMPLES_DIR = "../data/sample"
 
 
 def run_pipeline():
-    print("============================================")
-    print("🚀 Pipeline Financeiro - Início da execução")
-    print("============================================")
+    logger.info("============================================")
+    logger.info("🚀 Pipeline Financeiro - Início da execução")
+    logger.info("============================================")
 
     # 1. Extract
     df_raw = run_extract()
@@ -41,9 +42,9 @@ def run_pipeline():
     # 4. Load (carrega os samples no banco)
     run_load()
 
-    print("============================================")
-    print("✅ Pipeline Financeiro finalizado com sucesso")
-    print("============================================")
+    logger.info("============================================")
+    logger.info("✅ Pipeline Financeiro finalizado com sucesso")
+    logger.info("============================================")
 
 
 if __name__ == "__main__":

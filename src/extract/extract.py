@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+from utils.logger import logger
 
 RAW_DIR = "../data/raw"
 PROCESSED_PATH = "../data/processed/balancos_processed.csv"
@@ -12,11 +13,12 @@ def load_raw_data(csv_path: str) -> pd.DataFrame:
     - Converte em DataFrame padronizado
     """
     if not os.path.exists(csv_path):
+        logger.error(f"Arquivo não encontrado: {csv_path}")
         raise FileNotFoundError(f"Arquivo não encontrado: {csv_path}")
 
-    print(f"[INFO] Lendo arquivo bruto: {csv_path}")
+    logger.info(f"Lendo arquivo bruto: {csv_path}")
     df = pd.read_csv(csv_path, sep=";", encoding="utf-8", low_memory=False)
-    print(f"[INFO] Linhas carregadas: {len(df)}")
+    logger.info(f"Linhas carregadas: {len(df)}")
 
     return df
 
@@ -30,7 +32,7 @@ def save_processed(df: pd.DataFrame, output_path: str):
     out_dir = os.path.dirname(output_path)
     os.makedirs(out_dir, exist_ok=True)
 
-    print(f"[INFO] Salvando arquivo processado: {output_path}")
+    logger.info(f"Salvando arquivo processado: {output_path}")
     df.to_csv(output_path, index=False, encoding="utf-8")
 
 
@@ -45,9 +47,14 @@ def run_extract():
     arquivos = [f for f in os.listdir(RAW_DIR) if f.endswith(".csv")]
 
     if not arquivos:
+        logger.error("Nenhum arquivo CSV encontrado em data/raw/")
         raise FileNotFoundError("Nenhum arquivo CSV encontrado em data/raw/")
 
     if len(arquivos) > 1:
+        logger.warning(
+            f"Mais de um CSV encontrado em data/raw/. "
+            f"Mantenha apenas um arquivo. Encontrados: {arquivos}"
+        )
         raise ValueError(
             f"Mais de um CSV encontrado em data/raw/. "
             f"Mantenha apenas um arquivo. Encontrados: {arquivos}"
@@ -56,6 +63,6 @@ def run_extract():
     raw_path = os.path.join(RAW_DIR, arquivos[0])
     df_raw = load_raw_data(raw_path)
     save_processed(df_raw, PROCESSED_PATH)
-    print("[OK] Extract finalizado com sucesso.")
+    logger.info("Extract finalizado com sucesso ✅")
 
     return df_raw
