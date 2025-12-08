@@ -45,7 +45,7 @@ def create_tables(conn):
         """
     CREATE TABLE IF NOT EXISTS dim_company_sample (
         id_empresa INTEGER,
-        nome_empresa TEXT
+        NomeFantasia TEXT
     );
     """
     )
@@ -73,7 +73,7 @@ def create_tables(conn):
     cursor.execute(
         """
     CREATE TABLE IF NOT EXISTS wide_table_sample (
-        nome_empresa TEXT,
+        NomeFantasia TEXT,
         data_fechamento TEXT,
         conta TEXT,
         valor REAL
@@ -85,7 +85,7 @@ def create_tables(conn):
     cursor.execute(
         """
     CREATE TABLE IF NOT EXISTS financial_indicators_sample (
-        nome_empresa TEXT,
+        NomeFantasia TEXT,
         data_fechamento TEXT,
         liquidez_corrente_pontos REAL,
         liquidez_geral_pontos REAL,
@@ -111,7 +111,7 @@ def create_tables(conn):
     cursor.execute(
         """
     CREATE TABLE IF NOT EXISTS financial_evolution_sample (
-        nome_empresa TEXT,
+        NomeFantasia TEXT,
         data_fechamento TEXT,
         crescimento_receita_yoy_percent REAL,
         crescimento_lucro_yoy_percent REAL,

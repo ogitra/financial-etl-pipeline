@@ -5,7 +5,7 @@ from transform.create_pivot import create_pivot_table
 from analytics.financial_indicators import calculate_indicators
 from analytics.financial_evolution import calculate_evolution
 from load.load import run_load
-from utils.save_sample import save_sample
+from utils.save_dataframe import save_dataframe
 from utils.logger import logger
 
 SAMPLES_DIR = "../data/sample"
@@ -18,29 +18,29 @@ def run_pipeline():
 
     # 1. Extract
     df_raw = run_extract()
-    save_sample(df_raw, SAMPLES_DIR, "extract")
+    save_dataframe(df_raw, SAMPLES_DIR, "extract")
     logger.info("Extract finalizado com sucesso ✅")
 
     # 2. Transform
     df_std = run_standardize(df_raw)
-    save_sample(df_std, SAMPLES_DIR, "standardize")
+    save_dataframe(df_std, SAMPLES_DIR, "standardize")
 
     df_split = run_split(df_std)
     # Itera sobre cada tabela retornada e salva o sample
     for name, df_table in df_split.items():
-        save_sample(df_table, SAMPLES_DIR, name)
+        save_dataframe(df_table, SAMPLES_DIR, name)
 
     wide_df = create_pivot_table(df_std)
-    save_sample(wide_df, SAMPLES_DIR, "wide_table")
+    save_dataframe(wide_df, SAMPLES_DIR, "wide_table")
 
     logger.info("Transform finalizado com sucesso ✅")
 
     # 3. Analytics
     indicators_df = calculate_indicators(wide_df)
-    save_sample(indicators_df, SAMPLES_DIR, "financial_indicators")
+    save_dataframe(indicators_df, SAMPLES_DIR, "financial_indicators")
 
     evolution_df = calculate_evolution(wide_df)
-    save_sample(evolution_df, SAMPLES_DIR, "financial_evolution")
+    save_dataframe(evolution_df, SAMPLES_DIR, "financial_evolution")
 
     logger.info("Analytics finalizado com sucesso ✅")
 

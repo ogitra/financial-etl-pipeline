@@ -9,7 +9,7 @@ def calculate_indicators(pivot_df: pd.DataFrame) -> pd.DataFrame:
     """
     logger.info("Iniciando cálculo de indicadores financeiros...")
     indicators = pd.DataFrame()
-    indicators["nome_empresa"] = pivot_df["nome_empresa"]
+    indicators["NomeFantasia"] = pivot_df["NomeFantasia"]
     indicators["data_fechamento"] = pivot_df["data_fechamento"]
 
     # ============================

@@ -17,7 +17,13 @@ def load_raw_data(csv_path: str) -> pd.DataFrame:
         raise FileNotFoundError(f"Arquivo não encontrado: {csv_path}")
 
     logger.info(f"Lendo arquivo bruto: {csv_path}")
-    df = pd.read_csv(csv_path, sep=";", encoding="utf-8", low_memory=False)
+
+    try:
+        df = pd.read_csv(csv_path, sep=";", encoding="utf-8", low_memory=False)
+    except UnicodeDecodeError:
+        logger.warning("Falha ao ler em UTF-8. Tentando latin1...")
+        df = pd.read_csv(csv_path, sep=";", encoding="latin1", low_memory=False)
+
     logger.info(f"Linhas carregadas: {len(df)}")
 
     return df

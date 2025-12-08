@@ -6,7 +6,7 @@ def create_dim_empresa(df):
     """
     Cria a dimensão de empresas sem duplicações, seleciona apenas id e nome.
     """
-    return df[["id_empresa", "nome_empresa"]].drop_duplicates()
+    return df[["id_empresa", "NomeFantasia"]].drop_duplicates()
 
 
 def create_dim_conta(df):

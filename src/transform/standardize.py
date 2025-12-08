@@ -20,7 +20,7 @@ def rename_columns(df: pd.DataFrame) -> pd.DataFrame:
     return df.rename(
         columns={
             "IdEmpresa": "id_empresa",
-            "NomeFinal": "nome_empresa",
+            "NomeFinal": "NomeFantasia",
             "DataFechamento": "data_fechamento",
             "IdConta": "id_conta",
             "CodigoConta": "codigo_conta",
