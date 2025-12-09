@@ -1,0 +1,470 @@
+IdEmpresa;NomeFantasia;DataFechamento;IdConta;CodigoConta;ContaDescricao;ValorPadronizado
+7288;3 Tentos Agroindustrial ;31/12/2024;332;3.03;Receita líquida de vendas e/ou serviços;12825771000.00
+7288;3 Tentos Agroindustrial ;31/12/2023;332;3.03;Receita líquida de vendas e/ou serviços;8998985000.00
+7288;3 Tentos Agroindustrial ;31/12/2024;55;1;Ativo total;8889423000.00
+7288;3 Tentos Agroindustrial ;31/12/2022;332;3.03;Receita líquida de vendas e/ou serviços;6885839000.00
+7288;3 Tentos Agroindustrial ;31/12/2023;55;1;Ativo total;6883789000.00
+7288;3 Tentos Agroindustrial ;31/12/2022;55;1;Ativo total;6081989000.00
+7288;3 Tentos Agroindustrial ;31/12/2024;56;1.01;Ativo circulante;5776390000.00
+7288;3 Tentos Agroindustrial ;31/12/2023;56;1.01;Ativo circulante;4422008000.00
+7288;3 Tentos Agroindustrial ;31/12/2022;56;1.01;Ativo circulante;4257219000.00
+7288;3 Tentos Agroindustrial ;31/12/2024;286;2.03;Patrimônio líquido;4045718000.00
+7288;3 Tentos Agroindustrial ;31/12/2024;178;2.01;Passivo circulante;3666344000.00
+7288;3 Tentos Agroindustrial ;31/12/2023;286;2.03;Patrimônio líquido;3351891000.00
+7288;3 Tentos Agroindustrial ;31/12/2024;103;1.02;Ativo não circulante;3113033000.00
+7288;3 Tentos Agroindustrial ;31/12/2022;286;2.03;Patrimônio líquido;2818555000.00
+7288;3 Tentos Agroindustrial ;31/12/2023;178;2.01;Passivo circulante;2784746000.00
+7288;3 Tentos Agroindustrial ;31/12/2022;178;2.01;Passivo circulante;2739186000.00
+7288;3 Tentos Agroindustrial ;31/12/2023;103;1.02;Ativo não circulante;2461781000.00
+7288;3 Tentos Agroindustrial ;31/12/2022;103;1.02;Ativo não circulante;1824770000.00
+7288;3 Tentos Agroindustrial ;31/12/2024;57;1.01.01;Caixa e equivalentes de caixa;1696858000.00
+7288;3 Tentos Agroindustrial ;31/12/2024;347;3.07;Resultado antes do resultado financeiro e dos tributos;1245298000.00
+7288;3 Tentos Agroindustrial ;31/12/2024;230;2.02;Passivo não circulante;1177361000.00
+7288;3 Tentos Agroindustrial ;31/12/2023;57;1.01.01;Caixa e equivalentes de caixa;1028483000.00
+7288;3 Tentos Agroindustrial ;31/12/2023;421;6.01;Caixa líquido das atividades operacionais;863505000.00
+7288;3 Tentos Agroindustrial ;31/12/2024;375;3.18;Lucro/Prejuízo do período;756395000.00
+7288;3 Tentos Agroindustrial ;31/12/2023;230;2.02;Passivo não circulante;747152000.00
+7288;3 Tentos Agroindustrial ;31/12/2024;421;6.01;Caixa líquido das atividades operacionais;726212000.00
+7288;3 Tentos Agroindustrial ;31/12/2022;57;1.01.01;Caixa e equivalentes de caixa;724314000.00
+7288;3 Tentos Agroindustrial ;31/12/2023;375;3.18;Lucro/Prejuízo do período;573802000.00
+7288;3 Tentos Agroindustrial ;31/12/2022;375;3.18;Lucro/Prejuízo do período;571174000.00
+7288;3 Tentos Agroindustrial ;31/12/2022;347;3.07;Resultado antes do resultado financeiro e dos tributos;537651000.00
+7288;3 Tentos Agroindustrial ;31/12/2022;230;2.02;Passivo não circulante;524248000.00
+7288;3 Tentos Agroindustrial ;31/12/2024;473;6.03;Caixa líquido das atividades de financiamento;465459000.00
+7288;3 Tentos Agroindustrial ;31/12/2023;347;3.07;Resultado antes do resultado financeiro e dos tributos;441690000.00
+7288;3 Tentos Agroindustrial ;31/12/2022;421;6.01;Caixa líquido das atividades operacionais;257697000.00
+7288;3 Tentos Agroindustrial ;31/12/2023;73;1.01.04;Aplicações financeiras;197451000.00
+7288;3 Tentos Agroindustrial ;31/12/2022;473;6.03;Caixa líquido das atividades de financiamento;154975000.00
+7288;3 Tentos Agroindustrial ;31/12/2022;73;1.01.04;Aplicações financeiras;154841000.00
+7288;3 Tentos Agroindustrial ;31/12/2024;73;1.01.04;Aplicações financeiras;75404000.00
+7288;3 Tentos Agroindustrial ;31/12/2022;462;6.02;Caixa líquido das atividades de investimento;-39948000.00
+7288;3 Tentos Agroindustrial ;31/12/2023;473;6.03;Caixa líquido das atividades de financiamento;-99537000.00
+7288;3 Tentos Agroindustrial ;31/12/2023;462;6.02;Caixa líquido das atividades de investimento;-459799000.00
+7288;3 Tentos Agroindustrial ;31/12/2022;335;3.06;Despesas/Receitas operacionais;-505648000.00
+7288;3 Tentos Agroindustrial ;31/12/2024;462;6.02;Caixa líquido das atividades de investimento;-523296000.00
+7288;3 Tentos Agroindustrial ;31/12/2023;335;3.06;Despesas/Receitas operacionais;-804316000.00
+7288;3 Tentos Agroindustrial ;31/12/2024;335;3.06;Despesas/Receitas operacionais;-1286205000.00
+7288;3 Tentos Agroindustrial ;31/12/2022;333;3.04;Custo de bens e/ou serviços vendidos;-5842540000.00
+7288;3 Tentos Agroindustrial ;31/12/2023;333;3.04;Custo de bens e/ou serviços vendidos;-7752979000.00
+7288;3 Tentos Agroindustrial ;31/12/2024;333;3.04;Custo de bens e/ou serviços vendidos;-10294268000.00
+24545;Almacenes Éxito;31/12/2024;332;3.03;Receita líquida de vendas e/ou serviços;28934575000.00
+24545;Almacenes Éxito;31/12/2022;332;3.03;Receita líquida de vendas e/ou serviços;25029760000.00
+24545;Almacenes Éxito;31/12/2024;55;1;Ativo total;24652780000.00
+24545;Almacenes Éxito;31/12/2023;332;3.03;Receita líquida de vendas e/ou serviços;24435461000.00
+24545;Almacenes Éxito;31/12/2023;55;1;Ativo total;20695906000.00
+24545;Almacenes Éxito;31/12/2022;55;1;Ativo total;19710662000.00
+24545;Almacenes Éxito;31/12/2024;103;1.02;Ativo não circulante;16989784000.00
+24545;Almacenes Éxito;31/12/2023;103;1.02;Ativo não circulante;14004355000.00
+24545;Almacenes Éxito;31/12/2022;103;1.02;Ativo não circulante;13271197000.00
+24545;Almacenes Éxito;31/12/2024;286;2.03;Patrimônio líquido;11256603000.00
+24545;Almacenes Éxito;31/12/2024;178;2.01;Passivo circulante;10107909000.00
+24545;Almacenes Éxito;31/12/2023;286;2.03;Patrimônio líquido;9400449000.00
+24545;Almacenes Éxito;31/12/2022;286;2.03;Patrimônio líquido;9148451000.00
+24545;Almacenes Éxito;31/12/2023;178;2.01;Passivo circulante;9049362000.00
+24545;Almacenes Éxito;31/12/2022;178;2.01;Passivo circulante;8031228000.00
+24545;Almacenes Éxito;31/12/2024;56;1.01;Ativo circulante;7662996000.00
+24545;Almacenes Éxito;31/12/2023;56;1.01;Ativo circulante;6691551000.00
+24545;Almacenes Éxito;31/12/2022;56;1.01;Ativo circulante;6439465000.00
+24545;Almacenes Éxito;31/12/2024;230;2.02;Passivo não circulante;3288268000.00
+24545;Almacenes Éxito;31/12/2022;421;6.01;Caixa líquido das atividades operacionais;2878648000.00
+24545;Almacenes Éxito;31/12/2022;230;2.02;Passivo não circulante;2530983000.00
+24545;Almacenes Éxito;31/12/2023;230;2.02;Passivo não circulante;2246095000.00
+24545;Almacenes Éxito;31/12/2023;57;1.01.01;Caixa e equivalentes de caixa;1910289000.00
+24545;Almacenes Éxito;31/12/2024;57;1.01.01;Caixa e equivalentes de caixa;1889851000.00
+24545;Almacenes Éxito;31/12/2022;57;1.01.01;Caixa e equivalentes de caixa;1880435000.00
+24545;Almacenes Éxito;31/12/2023;421;6.01;Caixa líquido das atividades operacionais;1766621000.00
+24545;Almacenes Éxito;31/12/2022;347;3.07;Resultado antes do resultado financeiro e dos tributos;1159757000.00
+24545;Almacenes Éxito;31/12/2024;347;3.07;Resultado antes do resultado financeiro e dos tributos;931299000.00
+24545;Almacenes Éxito;31/12/2023;347;3.07;Resultado antes do resultado financeiro e dos tributos;888895000.00
+24545;Almacenes Éxito;31/12/2024;421;6.01;Caixa líquido das atividades operacionais;364129000.00
+24545;Almacenes Éxito;31/12/2023;375;3.18;Lucro/Prejuízo do período;356518000.00
+24545;Almacenes Éxito;31/12/2024;375;3.18;Lucro/Prejuízo do período;313728000.00
+24545;Almacenes Éxito;31/12/2022;375;3.18;Lucro/Prejuízo do período;302546000.00
+24545;Almacenes Éxito;31/12/2024;473;6.03;Caixa líquido das atividades de financiamento;-50437000.00
+24545;Almacenes Éxito;31/12/2024;462;6.02;Caixa líquido das atividades de investimento;-533712000.00
+24545;Almacenes Éxito;31/12/2022;462;6.02;Caixa líquido das atividades de investimento;-643269000.00
+24545;Almacenes Éxito;31/12/2023;462;6.02;Caixa líquido das atividades de investimento;-679661000.00
+24545;Almacenes Éxito;31/12/2023;473;6.03;Caixa líquido das atividades de financiamento;-1196654000.00
+24545;Almacenes Éxito;31/12/2022;473;6.03;Caixa líquido das atividades de financiamento;-1500275000.00
+24545;Almacenes Éxito;31/12/2022;335;3.06;Despesas/Receitas operacionais;-5200456000.00
+24545;Almacenes Éxito;31/12/2023;335;3.06;Despesas/Receitas operacionais;-5388319000.00
+24545;Almacenes Éxito;31/12/2024;335;3.06;Despesas/Receitas operacionais;-6385498000.00
+24545;Almacenes Éxito;31/12/2023;333;3.04;Custo de bens e/ou serviços vendidos;-18158247000.00
+24545;Almacenes Éxito;31/12/2022;333;3.04;Custo de bens e/ou serviços vendidos;-18669547000.00
+24545;Almacenes Éxito;31/12/2024;333;3.04;Custo de bens e/ou serviços vendidos;-21617778000.00
+7794;Assaí;31/12/2024;332;3.03;Receita líquida de vendas e/ou serviços;73819000000.00
+7794;Assaí;31/12/2023;332;3.03;Receita líquida de vendas e/ou serviços;66503000000.00
+7794;Assaí;31/12/2022;332;3.03;Receita líquida de vendas e/ou serviços;54520000000.00
+7794;Assaí;31/12/2024;55;1;Ativo total;45593000000.00
+7794;Assaí;31/12/2023;55;1;Ativo total;43177000000.00
+7794;Assaí;31/12/2022;55;1;Ativo total;40618000000.00
+7794;Assaí;31/12/2024;103;1.02;Ativo não circulante;29145000000.00
+7794;Assaí;31/12/2023;103;1.02;Ativo não circulante;28561000000.00
+7794;Assaí;31/12/2022;103;1.02;Ativo não circulante;26439000000.00
+7794;Assaí;31/12/2024;230;2.02;Passivo não circulante;24026000000.00
+7794;Assaí;31/12/2023;230;2.02;Passivo não circulante;22122000000.00
+7794;Assaí;31/12/2022;230;2.02;Passivo não circulante;20306000000.00
+7794;Assaí;31/12/2024;56;1.01;Ativo circulante;16448000000.00
+7794;Assaí;31/12/2023;178;2.01;Passivo circulante;16425000000.00
+7794;Assaí;31/12/2022;178;2.01;Passivo circulante;16416000000.00
+7794;Assaí;31/12/2024;178;2.01;Passivo circulante;16312000000.00
+7794;Assaí;31/12/2023;56;1.01;Ativo circulante;14616000000.00
+7794;Assaí;31/12/2022;56;1.01;Ativo circulante;14179000000.00
+7794;Assaí;31/12/2023;421;6.01;Caixa líquido das atividades operacionais;5963000000.00
+7794;Assaí;31/12/2022;57;1.01.01;Caixa e equivalentes de caixa;5842000000.00
+7794;Assaí;31/12/2024;57;1.01.01;Caixa e equivalentes de caixa;5628000000.00
+7794;Assaí;31/12/2023;57;1.01.01;Caixa e equivalentes de caixa;5459000000.00
+7794;Assaí;31/12/2024;286;2.03;Patrimônio líquido;5255000000.00
+7794;Assaí;31/12/2022;421;6.01;Caixa líquido das atividades operacionais;5144000000.00
+7794;Assaí;31/12/2024;421;6.01;Caixa líquido das atividades operacionais;4932000000.00
+7794;Assaí;31/12/2023;286;2.03;Patrimônio líquido;4630000000.00
+7794;Assaí;31/12/2022;286;2.03;Patrimônio líquido;3896000000.00
+7794;Assaí;31/12/2024;347;3.07;Resultado antes do resultado financeiro e dos tributos;3844000000.00
+7794;Assaí;31/12/2023;347;3.07;Resultado antes do resultado financeiro e dos tributos;3285000000.00
+7794;Assaí;31/12/2022;347;3.07;Resultado antes do resultado financeiro e dos tributos;2850000000.00
+7794;Assaí;31/12/2022;473;6.03;Caixa líquido das atividades de financiamento;1938000000.00
+7794;Assaí;31/12/2022;375;3.18;Lucro/Prejuízo do período;1220000000.00
+7794;Assaí;31/12/2024;375;3.18;Lucro/Prejuízo do período;769000000.00
+7794;Assaí;31/12/2023;375;3.18;Lucro/Prejuízo do período;710000000.00
+7794;Assaí;31/12/2024;462;6.02;Caixa líquido das atividades de investimento;-1670000000.00
+7794;Assaí;31/12/2023;462;6.02;Caixa líquido das atividades de investimento;-3055000000.00
+7794;Assaí;31/12/2024;473;6.03;Caixa líquido das atividades de financiamento;-3093000000.00
+7794;Assaí;31/12/2023;473;6.03;Caixa líquido das atividades de financiamento;-3291000000.00
+7794;Assaí;31/12/2022;462;6.02;Caixa líquido das atividades de investimento;-3790000000.00
+7794;Assaí;31/12/2022;335;3.06;Despesas/Receitas operacionais;-6113000000.00
+7794;Assaí;31/12/2023;335;3.06;Despesas/Receitas operacionais;-7536000000.00
+7794;Assaí;31/12/2024;335;3.06;Despesas/Receitas operacionais;-8377000000.00
+7794;Assaí;31/12/2022;333;3.04;Custo de bens e/ou serviços vendidos;-45557000000.00
+7794;Assaí;31/12/2023;333;3.04;Custo de bens e/ou serviços vendidos;-55682000000.00
+7794;Assaí;31/12/2024;333;3.04;Custo de bens e/ou serviços vendidos;-61598000000.00
+21606;C&A;31/12/2024;55;1;Ativo total;10053899000.00
+21606;C&A;31/12/2023;55;1;Ativo total;9725565000.00
+21606;C&A;31/12/2022;55;1;Ativo total;9629594000.00
+21606;C&A;31/12/2024;332;3.03;Receita líquida de vendas e/ou serviços;7636539000.00
+21606;C&A;31/12/2023;332;3.03;Receita líquida de vendas e/ou serviços;6719317000.00
+21606;C&A;31/12/2022;332;3.03;Receita líquida de vendas e/ou serviços;6183550000.00
+21606;C&A;31/12/2023;103;1.02;Ativo não circulante;5283723000.00
+21606;C&A;31/12/2024;103;1.02;Ativo não circulante;5060506000.00
+21606;C&A;31/12/2024;56;1.01;Ativo circulante;4993393000.00
+21606;C&A;31/12/2022;103;1.02;Ativo não circulante;4876371000.00
+21606;C&A;31/12/2022;56;1.01;Ativo circulante;4753223000.00
+21606;C&A;31/12/2023;56;1.01;Ativo circulante;4441842000.00
+21606;C&A;31/12/2024;178;2.01;Passivo circulante;3850272000.00
+21606;C&A;31/12/2023;230;2.02;Passivo não circulante;3699227000.00
+21606;C&A;31/12/2022;178;2.01;Passivo circulante;3679731000.00
+21606;C&A;31/12/2024;286;2.03;Patrimônio líquido;3308488000.00
+21606;C&A;31/12/2023;178;2.01;Passivo circulante;3035263000.00
+21606;C&A;31/12/2022;286;2.03;Patrimônio líquido;3000196000.00
+21606;C&A;31/12/2023;286;2.03;Patrimônio líquido;2991075000.00
+21606;C&A;31/12/2022;230;2.02;Passivo não circulante;2949667000.00
+21606;C&A;31/12/2024;230;2.02;Passivo não circulante;2895139000.00
+21606;C&A;31/12/2022;57;1.01.01;Caixa e equivalentes de caixa;1674091000.00
+21606;C&A;31/12/2024;421;6.01;Caixa líquido das atividades operacionais;1485047000.00
+21606;C&A;31/12/2024;57;1.01.01;Caixa e equivalentes de caixa;1403225000.00
+21606;C&A;31/12/2023;57;1.01.01;Caixa e equivalentes de caixa;1155588000.00
+21606;C&A;31/12/2022;421;6.01;Caixa líquido das atividades operacionais;1090374000.00
+21606;C&A;31/12/2023;421;6.01;Caixa líquido das atividades operacionais;966746000.00
+21606;C&A;31/12/2024;347;3.07;Resultado antes do resultado financeiro e dos tributos;809245000.00
+21606;C&A;31/12/2024;375;3.18;Lucro/Prejuízo do período;452478000.00
+21606;C&A;31/12/2023;347;3.07;Resultado antes do resultado financeiro e dos tributos;398685000.00
+21606;C&A;31/12/2022;347;3.07;Resultado antes do resultado financeiro e dos tributos;268180000.00
+21606;C&A;31/12/2023;73;1.01.04;Aplicações financeiras;191587000.00
+21606;C&A;31/12/2024;73;1.01.04;Aplicações financeiras;169310000.00
+21606;C&A;31/12/2022;73;1.01.04;Aplicações financeiras;8735000.00
+21606;C&A;31/12/2022;473;6.03;Caixa líquido das atividades de financiamento;5054000.00
+21606;C&A;31/12/2022;375;3.18;Lucro/Prejuízo do período;829000.00
+21606;C&A;31/12/2023;375;3.18;Lucro/Prejuízo do período;-6820000.00
+21606;C&A;31/12/2023;462;6.02;Caixa líquido das atividades de investimento;-234423000.00
+21606;C&A;31/12/2024;462;6.02;Caixa líquido das atividades de investimento;-291762000.00
+21606;C&A;31/12/2022;462;6.02;Caixa líquido das atividades de investimento;-471588000.00
+21606;C&A;31/12/2024;473;6.03;Caixa líquido das atividades de financiamento;-945648000.00
+21606;C&A;31/12/2023;473;6.03;Caixa líquido das atividades de financiamento;-1250826000.00
+21606;C&A;31/12/2022;335;3.06;Despesas/Receitas operacionais;-2773658000.00
+21606;C&A;31/12/2023;335;3.06;Despesas/Receitas operacionais;-3123583000.00
+21606;C&A;31/12/2022;333;3.04;Custo de bens e/ou serviços vendidos;-3141712000.00
+21606;C&A;31/12/2023;333;3.04;Custo de bens e/ou serviços vendidos;-3197049000.00
+21606;C&A;31/12/2024;335;3.06;Despesas/Receitas operacionais;-3367324000.00
+21606;C&A;31/12/2024;333;3.04;Custo de bens e/ou serviços vendidos;-3459970000.00
+14229;Carrefour;31/12/2024;332;3.03;Receita líquida de vendas e/ou serviços;115636000000.00
+14229;Carrefour;31/12/2023;332;3.03;Receita líquida de vendas e/ou serviços;109859000000.00
+14229;Carrefour;31/12/2022;332;3.03;Receita líquida de vendas e/ou serviços;102890000000.00
+14229;Carrefour;31/12/2024;55;1;Ativo total;100188000000.00
+14229;Carrefour;31/12/2023;55;1;Ativo total;92766000000.00
+14229;Carrefour;31/12/2022;55;1;Ativo total;92328000000.00
+14229;Carrefour;31/12/2024;178;2.01;Passivo circulante;51271000000.00
+14229;Carrefour;31/12/2024;56;1.01;Ativo circulante;51210000000.00
+14229;Carrefour;31/12/2022;103;1.02;Ativo não circulante;49314000000.00
+14229;Carrefour;31/12/2024;103;1.02;Ativo não circulante;48978000000.00
+14229;Carrefour;31/12/2023;103;1.02;Ativo não circulante;48123000000.00
+14229;Carrefour;31/12/2023;178;2.01;Passivo circulante;47431000000.00
+14229;Carrefour;31/12/2022;178;2.01;Passivo circulante;46725000000.00
+14229;Carrefour;31/12/2023;56;1.01;Ativo circulante;44643000000.00
+14229;Carrefour;31/12/2022;56;1.01;Ativo circulante;43014000000.00
+14229;Carrefour;31/12/2024;230;2.02;Passivo não circulante;26303000000.00
+14229;Carrefour;31/12/2023;230;2.02;Passivo não circulante;24508000000.00
+14229;Carrefour;31/12/2022;230;2.02;Passivo não circulante;23831000000.00
+14229;Carrefour;31/12/2024;286;2.03;Patrimônio líquido;22614000000.00
+14229;Carrefour;31/12/2022;286;2.03;Patrimônio líquido;21772000000.00
+14229;Carrefour;31/12/2023;286;2.03;Patrimônio líquido;20827000000.00
+14229;Carrefour;31/12/2024;57;1.01.01;Caixa e equivalentes de caixa;15207000000.00
+14229;Carrefour;31/12/2023;57;1.01.01;Caixa e equivalentes de caixa;12029000000.00
+14229;Carrefour;31/12/2022;57;1.01.01;Caixa e equivalentes de caixa;10835000000.00
+14229;Carrefour;31/12/2022;421;6.01;Caixa líquido das atividades operacionais;6973000000.00
+14229;Carrefour;31/12/2022;347;3.07;Resultado antes do resultado financeiro e dos tributos;4933000000.00
+14229;Carrefour;31/12/2023;421;6.01;Caixa líquido das atividades operacionais;4729000000.00
+14229;Carrefour;31/12/2024;421;6.01;Caixa líquido das atividades operacionais;4706000000.00
+14229;Carrefour;31/12/2024;347;3.07;Resultado antes do resultado financeiro e dos tributos;4271000000.00
+14229;Carrefour;31/12/2022;473;6.03;Caixa líquido das atividades de financiamento;4219000000.00
+14229;Carrefour;31/12/2023;347;3.07;Resultado antes do resultado financeiro e dos tributos;2841000000.00
+14229;Carrefour;31/12/2022;375;3.18;Lucro/Prejuízo do período;1998000000.00
+14229;Carrefour;31/12/2024;375;3.18;Lucro/Prejuízo do período;1940000000.00
+14229;Carrefour;31/12/2023;73;1.01.04;Aplicações financeiras;272000000.00
+14229;Carrefour;31/12/2022;73;1.01.04;Aplicações financeiras;256000000.00
+14229;Carrefour;31/12/2024;73;1.01.04;Aplicações financeiras;1000000.00
+14229;Carrefour;31/12/2024;473;6.03;Caixa líquido das atividades de financiamento;-502000000.00
+14229;Carrefour;31/12/2023;375;3.18;Lucro/Prejuízo do período;-639000000.00
+14229;Carrefour;31/12/2023;462;6.02;Caixa líquido das atividades de investimento;-906000000.00
+14229;Carrefour;31/12/2024;462;6.02;Caixa líquido das atividades de investimento;-1026000000.00
+14229;Carrefour;31/12/2023;473;6.03;Caixa líquido das atividades de financiamento;-2629000000.00
+14229;Carrefour;31/12/2022;462;6.02;Caixa líquido das atividades de investimento;-7302000000.00
+14229;Carrefour;31/12/2022;335;3.06;Despesas/Receitas operacionais;-14716000000.00
+14229;Carrefour;31/12/2024;335;3.06;Despesas/Receitas operacionais;-16904000000.00
+14229;Carrefour;31/12/2023;335;3.06;Despesas/Receitas operacionais;-17820000000.00
+14229;Carrefour;31/12/2022;333;3.04;Custo de bens e/ou serviços vendidos;-83241000000.00
+14229;Carrefour;31/12/2023;333;3.04;Custo de bens e/ou serviços vendidos;-89198000000.00
+14229;Carrefour;31/12/2024;333;3.04;Custo de bens e/ou serviços vendidos;-94461000000.00
+2575;Drogasil;31/12/2024;332;3.03;Receita líquida de vendas e/ou serviços;38871522000.00
+2575;Drogasil;31/12/2023;332;3.03;Receita líquida de vendas e/ou serviços;33973790000.00
+2575;Drogasil;31/12/2022;332;3.03;Receita líquida de vendas e/ou serviços;29067380000.00
+2575;Drogasil;31/12/2024;55;1;Ativo total;22163756000.00
+2575;Drogasil;31/12/2023;55;1;Ativo total;20094412000.00
+2575;Drogasil;31/12/2022;55;1;Ativo total;17185306000.00
+2575;Drogasil;31/12/2024;56;1.01;Ativo circulante;12703710000.00
+2575;Drogasil;31/12/2023;56;1.01;Ativo circulante;11561674000.00
+2575;Drogasil;31/12/2022;56;1.01;Ativo circulante;9577068000.00
+2575;Drogasil;31/12/2024;103;1.02;Ativo não circulante;9460046000.00
+2575;Drogasil;31/12/2024;178;2.01;Passivo circulante;9194959000.00
+2575;Drogasil;31/12/2023;103;1.02;Ativo não circulante;8532738000.00
+2575;Drogasil;31/12/2023;178;2.01;Passivo circulante;8079497000.00
+2575;Drogasil;31/12/2022;103;1.02;Ativo não circulante;7608238000.00
+2575;Drogasil;31/12/2024;230;2.02;Passivo não circulante;6521910000.00
+2575;Drogasil;31/12/2024;286;2.03;Patrimônio líquido;6446887000.00
+2575;Drogasil;31/12/2022;178;2.01;Passivo circulante;6367168000.00
+2575;Drogasil;31/12/2023;286;2.03;Patrimônio líquido;6028301000.00
+2575;Drogasil;31/12/2023;230;2.02;Passivo não circulante;5986614000.00
+2575;Drogasil;31/12/2022;230;2.02;Passivo não circulante;5415197000.00
+2575;Drogasil;31/12/2022;286;2.03;Patrimônio líquido;5402941000.00
+2575;Drogasil;31/12/2024;421;6.01;Caixa líquido das atividades operacionais;2771263000.00
+2575;Drogasil;31/12/2024;347;3.07;Resultado antes do resultado financeiro e dos tributos;2352106000.00
+2575;Drogasil;31/12/2023;347;3.07;Resultado antes do resultado financeiro e dos tributos;2080489000.00
+2575;Drogasil;31/12/2022;347;3.07;Resultado antes do resultado financeiro e dos tributos;1839324000.00
+2575;Drogasil;31/12/2023;421;6.01;Caixa líquido das atividades operacionais;1785327000.00
+2575;Drogasil;31/12/2022;421;6.01;Caixa líquido das atividades operacionais;1682124000.00
+2575;Drogasil;31/12/2024;375;3.18;Lucro/Prejuízo do período;1211373000.00
+2575;Drogasil;31/12/2023;375;3.18;Lucro/Prejuízo do período;1087143000.00
+2575;Drogasil;31/12/2022;375;3.18;Lucro/Prejuízo do período;1014968000.00
+2575;Drogasil;31/12/2024;57;1.01.01;Caixa e equivalentes de caixa;528002000.00
+2575;Drogasil;31/12/2022;57;1.01.01;Caixa e equivalentes de caixa;433541000.00
+2575;Drogasil;31/12/2023;57;1.01.01;Caixa e equivalentes de caixa;412321000.00
+2575;Drogasil;31/12/2023;73;1.01.04;Aplicações financeiras;26506000.00
+2575;Drogasil;31/12/2024;73;1.01.04;Aplicações financeiras;15706000.00
+2575;Drogasil;31/12/2022;473;6.03;Caixa líquido das atividades de financiamento;-375250000.00
+2575;Drogasil;31/12/2023;473;6.03;Caixa líquido das atividades de financiamento;-499424000.00
+2575;Drogasil;31/12/2022;462;6.02;Caixa líquido das atividades de investimento;-1229451000.00
+2575;Drogasil;31/12/2024;473;6.03;Caixa líquido das atividades de financiamento;-1242671000.00
+2575;Drogasil;31/12/2023;462;6.02;Caixa líquido das atividades de investimento;-1307123000.00
+2575;Drogasil;31/12/2024;462;6.02;Caixa líquido das atividades de investimento;-1412911000.00
+2575;Drogasil;31/12/2022;335;3.06;Despesas/Receitas operacionais;-6970144000.00
+2575;Drogasil;31/12/2023;335;3.06;Despesas/Receitas operacionais;-8126875000.00
+2575;Drogasil;31/12/2024;335;3.06;Despesas/Receitas operacionais;-9204675000.00
+2575;Drogasil;31/12/2022;333;3.04;Custo de bens e/ou serviços vendidos;-20257912000.00
+2575;Drogasil;31/12/2023;333;3.04;Custo de bens e/ou serviços vendidos;-23766426000.00
+2575;Drogasil;31/12/2024;333;3.04;Custo de bens e/ou serviços vendidos;-27314741000.00
+14;GPA;31/12/2022;55;1;Ativo total;43839000000.00
+14;GPA;31/12/2022;56;1.01;Ativo circulante;28559000000.00
+14;GPA;31/12/2023;55;1;Ativo total;22050000000.00
+14;GPA;31/12/2024;55;1;Ativo total;19703000000.00
+14;GPA;31/12/2024;332;3.03;Receita líquida de vendas e/ou serviços;18790000000.00
+14;GPA;31/12/2023;332;3.03;Receita líquida de vendas e/ou serviços;17793000000.00
+14;GPA;31/12/2022;178;2.01;Passivo circulante;17747000000.00
+14;GPA;31/12/2022;332;3.03;Receita líquida de vendas e/ou serviços;17321000000.00
+14;GPA;31/12/2022;103;1.02;Ativo não circulante;15280000000.00
+14;GPA;31/12/2023;103;1.02;Ativo não circulante;14527000000.00
+14;GPA;31/12/2022;286;2.03;Patrimônio líquido;13733000000.00
+14;GPA;31/12/2024;103;1.02;Ativo não circulante;13587000000.00
+14;GPA;31/12/2022;230;2.02;Passivo não circulante;12359000000.00
+14;GPA;31/12/2023;230;2.02;Passivo não circulante;11103000000.00
+14;GPA;31/12/2024;230;2.02;Passivo não circulante;10412000000.00
+14;GPA;31/12/2023;56;1.01;Ativo circulante;7523000000.00
+14;GPA;31/12/2024;178;2.01;Passivo circulante;6356000000.00
+14;GPA;31/12/2023;178;2.01;Passivo circulante;6225000000.00
+14;GPA;31/12/2024;56;1.01;Ativo circulante;6116000000.00
+14;GPA;31/12/2023;286;2.03;Patrimônio líquido;4722000000.00
+14;GPA;31/12/2022;57;1.01.01;Caixa e equivalentes de caixa;3751000000.00
+14;GPA;31/12/2023;57;1.01.01;Caixa e equivalentes de caixa;2971000000.00
+14;GPA;31/12/2024;286;2.03;Patrimônio líquido;2935000000.00
+14;GPA;31/12/2022;462;6.02;Caixa líquido das atividades de investimento;2834000000.00
+14;GPA;31/12/2024;57;1.01.01;Caixa e equivalentes de caixa;2631000000.00
+14;GPA;31/12/2024;421;6.01;Caixa líquido das atividades operacionais;1363000000.00
+14;GPA;31/12/2023;73;1.01.04;Aplicações financeiras;777000000.00
+14;GPA;31/12/2023;347;3.07;Resultado antes do resultado financeiro e dos tributos;660000000.00
+14;GPA;31/12/2023;421;6.01;Caixa líquido das atividades operacionais;563000000.00
+14;GPA;31/12/2024;462;6.02;Caixa líquido das atividades de investimento;338000000.00
+14;GPA;31/12/2024;73;1.01.04;Aplicações financeiras;15000000.00
+14;GPA;31/12/2022;375;3.18;Lucro/Prejuízo do período;-4000000.00
+14;GPA;31/12/2022;421;6.01;Caixa líquido das atividades operacionais;-216000000.00
+14;GPA;31/12/2024;347;3.07;Resultado antes do resultado financeiro e dos tributos;-436000000.00
+14;GPA;31/12/2022;347;3.07;Resultado antes do resultado financeiro e dos tributos;-565000000.00
+14;GPA;31/12/2023;462;6.02;Caixa líquido das atividades de investimento;-1597000000.00
+14;GPA;31/12/2023;473;6.03;Caixa líquido das atividades de financiamento;-1705000000.00
+14;GPA;31/12/2024;473;6.03;Caixa líquido das atividades de financiamento;-2041000000.00
+14;GPA;31/12/2023;375;3.18;Lucro/Prejuízo do período;-2134000000.00
+14;GPA;31/12/2024;375;3.18;Lucro/Prejuízo do período;-2403000000.00
+14;GPA;31/12/2023;335;3.06;Despesas/Receitas operacionais;-4037000000.00
+14;GPA;31/12/2022;473;6.03;Caixa líquido das atividades de financiamento;-4703000000.00
+14;GPA;31/12/2022;335;3.06;Despesas/Receitas operacionais;-4867000000.00
+14;GPA;31/12/2024;335;3.06;Despesas/Receitas operacionais;-5608000000.00
+14;GPA;31/12/2022;333;3.04;Custo de bens e/ou serviços vendidos;-13019000000.00
+14;GPA;31/12/2023;333;3.04;Custo de bens e/ou serviços vendidos;-13096000000.00
+14;GPA;31/12/2024;333;3.04;Custo de bens e/ou serviços vendidos;-13618000000.00
+22631;Grupo Mateus;31/12/2024;332;3.03;Receita líquida de vendas e/ou serviços;32085428000.00
+22631;Grupo Mateus;31/12/2023;332;3.03;Receita líquida de vendas e/ou serviços;26773586000.00
+22631;Grupo Mateus;31/12/2022;332;3.03;Receita líquida de vendas e/ou serviços;21768477000.00
+22631;Grupo Mateus;31/12/2024;55;1;Ativo total;18959322000.00
+22631;Grupo Mateus;31/12/2023;55;1;Ativo total;16357296000.00
+22631;Grupo Mateus;31/12/2022;55;1;Ativo total;13263938000.00
+22631;Grupo Mateus;31/12/2024;56;1.01;Ativo circulante;11969284000.00
+22631;Grupo Mateus;31/12/2023;56;1.01;Ativo circulante;10370535000.00
+22631;Grupo Mateus;31/12/2024;286;2.03;Patrimônio líquido;9963448000.00
+22631;Grupo Mateus;31/12/2022;56;1.01;Ativo circulante;8800267000.00
+22631;Grupo Mateus;31/12/2023;286;2.03;Patrimônio líquido;8773513000.00
+22631;Grupo Mateus;31/12/2022;286;2.03;Patrimônio líquido;7541985000.00
+22631;Grupo Mateus;31/12/2024;103;1.02;Ativo não circulante;6990038000.00
+22631;Grupo Mateus;31/12/2023;103;1.02;Ativo não circulante;5986761000.00
+22631;Grupo Mateus;31/12/2024;178;2.01;Passivo circulante;4673250000.00
+22631;Grupo Mateus;31/12/2022;103;1.02;Ativo não circulante;4463671000.00
+22631;Grupo Mateus;31/12/2024;230;2.02;Passivo não circulante;4322624000.00
+22631;Grupo Mateus;31/12/2023;178;2.01;Passivo circulante;4235730000.00
+22631;Grupo Mateus;31/12/2023;230;2.02;Passivo não circulante;3348053000.00
+22631;Grupo Mateus;31/12/2022;230;2.02;Passivo não circulante;2968607000.00
+22631;Grupo Mateus;31/12/2022;178;2.01;Passivo circulante;2753346000.00
+22631;Grupo Mateus;31/12/2024;347;3.07;Resultado antes do resultado financeiro e dos tributos;2090814000.00
+22631;Grupo Mateus;31/12/2022;57;1.01.01;Caixa e equivalentes de caixa;1795647000.00
+22631;Grupo Mateus;31/12/2023;347;3.07;Resultado antes do resultado financeiro e dos tributos;1682611000.00
+22631;Grupo Mateus;31/12/2024;57;1.01.01;Caixa e equivalentes de caixa;1664167000.00
+22631;Grupo Mateus;31/12/2024;421;6.01;Caixa líquido das atividades operacionais;1460996000.00
+22631;Grupo Mateus;31/12/2022;347;3.07;Resultado antes do resultado financeiro e dos tributos;1365284000.00
+22631;Grupo Mateus;31/12/2024;375;3.18;Lucro/Prejuízo do período;1334894000.00
+22631;Grupo Mateus;31/12/2023;57;1.01.01;Caixa e equivalentes de caixa;1289138000.00
+22631;Grupo Mateus;31/12/2023;375;3.18;Lucro/Prejuízo do período;1234638000.00
+22631;Grupo Mateus;31/12/2022;375;3.18;Lucro/Prejuízo do período;1064795000.00
+22631;Grupo Mateus;31/12/2022;421;6.01;Caixa líquido das atividades operacionais;977778000.00
+22631;Grupo Mateus;31/12/2023;421;6.01;Caixa líquido das atividades operacionais;954378000.00
+22631;Grupo Mateus;31/12/2022;473;6.03;Caixa líquido das atividades de financiamento;540199000.00
+22631;Grupo Mateus;31/12/2024;473;6.03;Caixa líquido das atividades de financiamento;47243000.00
+22631;Grupo Mateus;31/12/2023;473;6.03;Caixa líquido das atividades de financiamento;-384834000.00
+22631;Grupo Mateus;31/12/2022;462;6.02;Caixa líquido das atividades de investimento;-599585000.00
+22631;Grupo Mateus;31/12/2023;462;6.02;Caixa líquido das atividades de investimento;-1076053000.00
+22631;Grupo Mateus;31/12/2024;462;6.02;Caixa líquido das atividades de investimento;-1133210000.00
+22631;Grupo Mateus;31/12/2022;335;3.06;Despesas/Receitas operacionais;-3433758000.00
+22631;Grupo Mateus;31/12/2023;335;3.06;Despesas/Receitas operacionais;-4130317000.00
+22631;Grupo Mateus;31/12/2024;335;3.06;Despesas/Receitas operacionais;-5169259000.00
+22631;Grupo Mateus;31/12/2022;333;3.04;Custo de bens e/ou serviços vendidos;-16969435000.00
+22631;Grupo Mateus;31/12/2023;333;3.04;Custo de bens e/ou serviços vendidos;-20960658000.00
+22631;Grupo Mateus;31/12/2024;333;3.04;Custo de bens e/ou serviços vendidos;-24825355000.00
+22096;Lojas Quero Quero;31/12/2024;55;1;Ativo total;3702247000.00
+22096;Lojas Quero Quero;31/12/2023;55;1;Ativo total;3305723000.00
+22096;Lojas Quero Quero;31/12/2022;55;1;Ativo total;3031361000.00
+22096;Lojas Quero Quero;31/12/2024;332;3.03;Receita líquida de vendas e/ou serviços;2666330000.00
+22096;Lojas Quero Quero;31/12/2024;56;1.01;Ativo circulante;2639842000.00
+22096;Lojas Quero Quero;31/12/2023;332;3.03;Receita líquida de vendas e/ou serviços;2398127000.00
+22096;Lojas Quero Quero;31/12/2022;332;3.03;Receita líquida de vendas e/ou serviços;2312668000.00
+22096;Lojas Quero Quero;31/12/2023;56;1.01;Ativo circulante;2218074000.00
+22096;Lojas Quero Quero;31/12/2022;56;1.01;Ativo circulante;2032988000.00
+22096;Lojas Quero Quero;31/12/2024;178;2.01;Passivo circulante;1694929000.00
+22096;Lojas Quero Quero;31/12/2023;230;2.02;Passivo não circulante;1464765000.00
+22096;Lojas Quero Quero;31/12/2024;230;2.02;Passivo não circulante;1461321000.00
+22096;Lojas Quero Quero;31/12/2022;230;2.02;Passivo não circulante;1419554000.00
+22096;Lojas Quero Quero;31/12/2023;178;2.01;Passivo circulante;1307156000.00
+22096;Lojas Quero Quero;31/12/2023;103;1.02;Ativo não circulante;1087649000.00
+22096;Lojas Quero Quero;31/12/2022;178;2.01;Passivo circulante;1074985000.00
+22096;Lojas Quero Quero;31/12/2024;103;1.02;Ativo não circulante;1062405000.00
+22096;Lojas Quero Quero;31/12/2022;103;1.02;Ativo não circulante;998373000.00
+22096;Lojas Quero Quero;31/12/2024;286;2.03;Patrimônio líquido;545997000.00
+22096;Lojas Quero Quero;31/12/2022;286;2.03;Patrimônio líquido;536822000.00
+22096;Lojas Quero Quero;31/12/2023;286;2.03;Patrimônio líquido;533802000.00
+22096;Lojas Quero Quero;31/12/2024;57;1.01.01;Caixa e equivalentes de caixa;489905000.00
+22096;Lojas Quero Quero;31/12/2023;57;1.01.01;Caixa e equivalentes de caixa;421357000.00
+22096;Lojas Quero Quero;31/12/2022;57;1.01.01;Caixa e equivalentes de caixa;416779000.00
+22096;Lojas Quero Quero;31/12/2024;421;6.01;Caixa líquido das atividades operacionais;323646000.00
+22096;Lojas Quero Quero;31/12/2022;421;6.01;Caixa líquido das atividades operacionais;236313000.00
+22096;Lojas Quero Quero;31/12/2023;421;6.01;Caixa líquido das atividades operacionais;166481000.00
+22096;Lojas Quero Quero;31/12/2024;73;1.01.04;Aplicações financeiras;163107000.00
+22096;Lojas Quero Quero;31/12/2023;73;1.01.04;Aplicações financeiras;110209000.00
+22096;Lojas Quero Quero;31/12/2024;347;3.07;Resultado antes do resultado financeiro e dos tributos;105655000.00
+22096;Lojas Quero Quero;31/12/2023;347;3.07;Resultado antes do resultado financeiro e dos tributos;103006000.00
+22096;Lojas Quero Quero;31/12/2022;347;3.07;Resultado antes do resultado financeiro e dos tributos;87554000.00
+22096;Lojas Quero Quero;31/12/2022;73;1.01.04;Aplicações financeiras;75522000.00
+22096;Lojas Quero Quero;31/12/2023;375;3.18;Lucro/Prejuízo do período;19679000.00
+22096;Lojas Quero Quero;31/12/2024;375;3.18;Lucro/Prejuízo do período;146000.00
+22096;Lojas Quero Quero;31/12/2022;375;3.18;Lucro/Prejuízo do período;-18703000.00
+22096;Lojas Quero Quero;31/12/2022;473;6.03;Caixa líquido das atividades de financiamento;-20301000.00
+22096;Lojas Quero Quero;31/12/2022;462;6.02;Caixa líquido das atividades de investimento;-55584000.00
+22096;Lojas Quero Quero;31/12/2023;462;6.02;Caixa líquido das atividades de investimento;-79588000.00
+22096;Lojas Quero Quero;31/12/2023;473;6.03;Caixa líquido das atividades de financiamento;-82315000.00
+22096;Lojas Quero Quero;31/12/2024;462;6.02;Caixa líquido das atividades de investimento;-101745000.00
+22096;Lojas Quero Quero;31/12/2024;473;6.03;Caixa líquido das atividades de financiamento;-153353000.00
+22096;Lojas Quero Quero;31/12/2022;335;3.06;Despesas/Receitas operacionais;-681567000.00
+22096;Lojas Quero Quero;31/12/2023;335;3.06;Despesas/Receitas operacionais;-723006000.00
+22096;Lojas Quero Quero;31/12/2024;335;3.06;Despesas/Receitas operacionais;-822482000.00
+22096;Lojas Quero Quero;31/12/2022;333;3.04;Custo de bens e/ou serviços vendidos;-1543547000.00
+22096;Lojas Quero Quero;31/12/2023;333;3.04;Custo de bens e/ou serviços vendidos;-1572115000.00
+22096;Lojas Quero Quero;31/12/2024;333;3.04;Custo de bens e/ou serviços vendidos;-1738193000.00
+2389;Lojas Renner;31/12/2022;55;1;Ativo total;21148892000.00
+2389;Lojas Renner;31/12/2023;55;1;Ativo total;20490638000.00
+2389;Lojas Renner;31/12/2024;55;1;Ativo total;20364590000.00
+2389;Lojas Renner;31/12/2024;332;3.03;Receita líquida de vendas e/ou serviços;14436366000.00
+2389;Lojas Renner;31/12/2023;332;3.03;Receita líquida de vendas e/ou serviços;13647849000.00
+2389;Lojas Renner;31/12/2022;332;3.03;Receita líquida de vendas e/ou serviços;13271137000.00
+2389;Lojas Renner;31/12/2022;56;1.01;Ativo circulante;13053770000.00
+2389;Lojas Renner;31/12/2024;56;1.01;Ativo circulante;12316659000.00
+2389;Lojas Renner;31/12/2023;56;1.01;Ativo circulante;12191644000.00
+2389;Lojas Renner;31/12/2024;286;2.03;Patrimônio líquido;10772951000.00
+2389;Lojas Renner;31/12/2022;286;2.03;Patrimônio líquido;10087515000.00
+2389;Lojas Renner;31/12/2023;286;2.03;Patrimônio líquido;10047221000.00
+2389;Lojas Renner;31/12/2023;103;1.02;Ativo não circulante;8298994000.00
+2389;Lojas Renner;31/12/2022;103;1.02;Ativo não circulante;8095122000.00
+2389;Lojas Renner;31/12/2024;103;1.02;Ativo não circulante;8047931000.00
+2389;Lojas Renner;31/12/2024;178;2.01;Passivo circulante;7647557470.00
+2389;Lojas Renner;31/12/2023;178;2.01;Passivo circulante;7492553000.00
+2389;Lojas Renner;31/12/2022;178;2.01;Passivo circulante;7005579000.00
+2389;Lojas Renner;31/12/2022;230;2.02;Passivo não circulante;4055798000.00
+2389;Lojas Renner;31/12/2023;230;2.02;Passivo não circulante;2950864000.00
+2389;Lojas Renner;31/12/2022;57;1.01.01;Caixa e equivalentes de caixa;2848351000.00
+2389;Lojas Renner;31/12/2023;421;6.01;Caixa líquido das atividades operacionais;2663364000.00
+2389;Lojas Renner;31/12/2023;57;1.01.01;Caixa e equivalentes de caixa;2532187000.00
+2389;Lojas Renner;31/12/2024;421;6.01;Caixa líquido das atividades operacionais;2487007000.00
+2389;Lojas Renner;31/12/2024;230;2.02;Passivo não circulante;1944082000.00
+2389;Lojas Renner;31/12/2024;57;1.01.01;Caixa e equivalentes de caixa;1926110000.00
+2389;Lojas Renner;31/12/2022;421;6.01;Caixa líquido das atividades operacionais;1536237000.00
+2389;Lojas Renner;31/12/2022;347;3.07;Resultado antes do resultado financeiro e dos tributos;1407401000.00
+2389;Lojas Renner;31/12/2022;375;3.18;Lucro/Prejuízo do período;1291704000.00
+2389;Lojas Renner;31/12/2024;347;3.07;Resultado antes do resultado financeiro e dos tributos;1259343000.00
+2389;Lojas Renner;31/12/2024;375;3.18;Lucro/Prejuízo do período;1196668000.00
+2389;Lojas Renner;31/12/2023;375;3.18;Lucro/Prejuízo do período;976259000.00
+2389;Lojas Renner;31/12/2023;347;3.07;Resultado antes do resultado financeiro e dos tributos;889077000.00
+2389;Lojas Renner;31/12/2024;73;1.01.04;Aplicações financeiras;845197000.00
+2389;Lojas Renner;31/12/2022;73;1.01.04;Aplicações financeiras;655131000.00
+2389;Lojas Renner;31/12/2023;73;1.01.04;Aplicações financeiras;571655000.00
+2389;Lojas Renner;31/12/2024;462;6.02;Caixa líquido das atividades de investimento;-679201000.00
+2389;Lojas Renner;31/12/2023;462;6.02;Caixa líquido das atividades de investimento;-892916000.00
+2389;Lojas Renner;31/12/2022;462;6.02;Caixa líquido das atividades de investimento;-1190486000.00
+2389;Lojas Renner;31/12/2023;473;6.03;Caixa líquido das atividades de financiamento;-2009108000.00
+2389;Lojas Renner;31/12/2024;473;6.03;Caixa líquido das atividades de financiamento;-2426212000.00
+2389;Lojas Renner;31/12/2022;473;6.03;Caixa líquido das atividades de financiamento;-2984396000.00
+2389;Lojas Renner;31/12/2022;333;3.04;Custo de bens e/ou serviços vendidos;-5286323000.00
+2389;Lojas Renner;31/12/2023;333;3.04;Custo de bens e/ou serviços vendidos;-5427247000.00
+2389;Lojas Renner;31/12/2024;333;3.04;Custo de bens e/ou serviços vendidos;-5694417000.00
+2389;Lojas Renner;31/12/2022;335;3.06;Despesas/Receitas operacionais;-6577413000.00
+2389;Lojas Renner;31/12/2023;335;3.06;Despesas/Receitas operacionais;-7331525000.00
+2389;Lojas Renner;31/12/2024;335;3.06;Despesas/Receitas operacionais;-7482606000.00

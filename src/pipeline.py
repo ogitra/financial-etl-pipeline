@@ -1,7 +1,7 @@
 from extract import run_extract
 from transform.standardize import run_standardize
-from transform.split_dim_fato import run_split
-from transform.create_pivot import create_pivot_table
+from transform.split_dim_fact import run_split
+from transform.wide_table import wide_table
 from analytics.financial_indicators import calculate_indicators
 from analytics.financial_evolution import calculate_evolution
 from load.load import run_load
@@ -37,7 +37,7 @@ def run_pipeline():
 
     # 3. Analytics
 
-    wide_df = create_pivot_table(df_std)
+    wide_df = wide_table(df_std)
     save_dataframe(wide_df, ANALYTICS_PATH, "wide_table")
 
     indicators_df = calculate_indicators(wide_df)

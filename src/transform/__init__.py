@@ -1,3 +1,3 @@
 from .standardize import run_standardize
-from .create_pivot import create_pivot_table
-from .split_dim_fato import run_split
+from .wide_table import wide_table
+from .split_dim_fact import run_split
