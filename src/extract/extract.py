@@ -17,29 +17,10 @@ def load_raw_data(csv_path: str) -> pd.DataFrame:
         raise FileNotFoundError(f"Arquivo não encontrado: {csv_path}")
 
     logger.info(f"Lendo arquivo bruto: {csv_path}")
-
-    try:
-        df = pd.read_csv(csv_path, sep=";", encoding="utf-8", low_memory=False)
-    except UnicodeDecodeError:
-        logger.warning("Falha ao ler em UTF-8. Tentando latin1...")
-        df = pd.read_csv(csv_path, sep=";", encoding="latin1", low_memory=False)
-
+    df = pd.read_csv(csv_path, sep=";", encoding="utf-8", low_memory=False)
     logger.info(f"Linhas carregadas: {len(df)}")
 
     return df
-
-
-def save_processed(df: pd.DataFrame, output_path: str):
-    """
-    Salva o dataframe no diretório processed.
-    - Cria diretório de saída se não existir.
-    - Salva em CSV
-    """
-    out_dir = os.path.dirname(output_path)
-    os.makedirs(out_dir, exist_ok=True)
-
-    logger.info(f"Salvando arquivo processado: {output_path}")
-    df.to_csv(output_path, index=False, encoding="utf-8")
 
 
 def run_extract():
@@ -50,24 +31,23 @@ def run_extract():
     - Se houver mais de um, também interrompe
     - Caso exista exatamente um arquivo, define o caminho completo para ser usado na leitura.
     """
-    arquivos = [f for f in os.listdir(RAW_DIR) if f.endswith(".csv")]
+    files = [f for f in os.listdir(RAW_DIR) if f.endswith(".csv")]
 
-    if not arquivos:
+    if not files:
         logger.error("Nenhum arquivo CSV encontrado em data/raw/")
         raise FileNotFoundError("Nenhum arquivo CSV encontrado em data/raw/")
 
-    if len(arquivos) > 1:
+    if len(files) > 1:
         logger.warning(
             f"Mais de um CSV encontrado em data/raw/. "
-            f"Mantenha apenas um arquivo. Encontrados: {arquivos}"
+            f"Mantenha apenas um arquivo. Encontrados: {files}"
         )
         raise ValueError(
             f"Mais de um CSV encontrado em data/raw/. "
-            f"Mantenha apenas um arquivo. Encontrados: {arquivos}"
+            f"Mantenha apenas um arquivo. Encontrados: {files}"
         )
 
-    raw_path = os.path.join(RAW_DIR, arquivos[0])
+    raw_path = os.path.join(RAW_DIR, files[0])
     df_raw = load_raw_data(raw_path)
-    save_processed(df_raw, PROCESSED_PATH)
 
     return df_raw

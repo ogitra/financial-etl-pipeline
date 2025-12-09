@@ -3,16 +3,11 @@ import sqlite3
 import pandas as pd
 from utils.logger import logger
 
-# Caminhos dos samples
-SAMPLES_DIR = "../data/sample"
-DIM_COMPANY_SAMPLE = os.path.join(SAMPLES_DIR, "dim_company_sample.csv")
-DIM_ACCOUNT_SAMPLE = os.path.join(SAMPLES_DIR, "dim_account_sample.csv")
-FACT_BALANCE_SAMPLE = os.path.join(SAMPLES_DIR, "fact_balance_sample.csv")
-WIDE_TABLE_SAMPLE = os.path.join(SAMPLES_DIR, "wide_table_sample.csv")
-FINANCIAL_INDICATORS_SAMPLE = os.path.join(
-    SAMPLES_DIR, "financial_indicators_sample.csv"
-)
-FINANCIAL_EVOLUTION_SAMPLE = os.path.join(SAMPLES_DIR, "financial_evolution_sample.csv")
+# Caminhos das etapas do pipeline
+EXTRACT_PATH = "../data/raw/extract"
+STD_PATH = "../data/processed/standardized"
+DIM_FACT_PATH = "../data/processed/dimensions_fact"
+ANALYTICS_PATH = "../data/processed/analytics"
 
 # Caminho do banco
 DB_PATH = "../data/warehouse/balance_dw.db"
@@ -32,101 +27,99 @@ def connect_db(db_path: str):
     os.makedirs(os.path.dirname(db_path), exist_ok=True)
     conn = sqlite3.connect(db_path)
     logger.info(f"Conectado ao banco: {db_path}")
-
     return conn
 
 
 def create_tables(conn):
-    """Cria tabelas de samples no SQLite."""
+    """Cria tabelas no SQLite para cada etapa do pipeline."""
     cursor = conn.cursor()
 
-    # Samples das dimensões e fato
+    # Dimensões e fato
     cursor.execute(
         """
-    CREATE TABLE IF NOT EXISTS dim_company_sample (
-        id_empresa INTEGER,
-        NomeFantasia TEXT
-    );
-    """
+        CREATE TABLE IF NOT EXISTS dim_company (
+            id_empresa INTEGER,
+            NomeFantasia TEXT
+        );
+        """
     )
     cursor.execute(
         """
-    CREATE TABLE IF NOT EXISTS dim_account_sample (
-        id_conta INTEGER,
-        codigo_conta TEXT,
-        descricao_conta TEXT
-    );
-    """
+        CREATE TABLE IF NOT EXISTS dim_account (
+            id_conta INTEGER,
+            codigo_conta TEXT,
+            descricao_conta TEXT
+        );
+        """
     )
     cursor.execute(
         """
-    CREATE TABLE IF NOT EXISTS fact_balance_sample (
-        id_empresa INTEGER,
-        id_conta INTEGER,
-        data_fechamento TEXT,
-        valor INTEGER
-    );
-    """
-    )
-
-    # Sample wide
-    cursor.execute(
+        CREATE TABLE IF NOT EXISTS fact_balance (
+            id_empresa INTEGER,
+            id_conta INTEGER,
+            data_fechamento TEXT,
+            valor REAL
+        );
         """
-    CREATE TABLE IF NOT EXISTS wide_table_sample (
-        NomeFantasia TEXT,
-        data_fechamento TEXT,
-        conta TEXT,
-        valor REAL
-    );
-    """
     )
 
-    # Sample indicators
+    # Wide table (analytics)
     cursor.execute(
         """
-    CREATE TABLE IF NOT EXISTS financial_indicators_sample (
-        NomeFantasia TEXT,
-        data_fechamento TEXT,
-        liquidez_corrente_pontos REAL,
-        liquidez_geral_pontos REAL,
-        liquidez_imediata_pontos REAL,
-        endividamento_pontos REAL,
-        alavancagem_pontos REAL,
-        composicao_endividamento_percent REAL,
-        roe_percent REAL,
-        roa_percent REAL,
-        ebit REAL,
-        margem_bruta_percent REAL,
-        margem_operacional_percent REAL,
-        margem_liquida_percent REAL,
-        caixa_operacional_sobre_receita_percent REAL,
-        conversao_caixa_percent REAL,
-        fluxo_caixa_livre REAL,
-        participacao_caixa_percent REAL
-    );
-    """
+        CREATE TABLE IF NOT EXISTS wide_table (
+            NomeFantasia TEXT,
+            data_fechamento TEXT,
+            conta TEXT,
+            valor REAL
+        );
+        """
     )
 
-    # Sample evolution
+    # Analytics: indicadores e evolução
     cursor.execute(
         """
-    CREATE TABLE IF NOT EXISTS financial_evolution_sample (
-        NomeFantasia TEXT,
-        data_fechamento TEXT,
-        crescimento_receita_yoy_percent REAL,
-        crescimento_lucro_yoy_percent REAL,
-        crescimento_ebit_yoy_percent REAL,
-        crescimento_ativo_yoy_percent REAL,
-        crescimento_pl_yoy_percent REAL,
-        crescimento_caixa_operacional_yoy_percent REAL,
-        variacao_endividamento_yoy_pp REAL,
-        margem_liquida_media_movel_percent REAL
-    );
-    """
+        CREATE TABLE IF NOT EXISTS financial_indicators (
+            NomeFantasia TEXT,
+            data_fechamento TEXT,
+            liquidez_corrente_pontos REAL,
+            liquidez_geral_pontos REAL,
+            liquidez_imediata_pontos REAL,
+            endividamento_pontos REAL,
+            alavancagem_pontos REAL,
+            composicao_endividamento_percent REAL,
+            roe_percent REAL,
+            roa_percent REAL,
+            ebit REAL,
+            margem_bruta_percent REAL,
+            margem_operacional_percent REAL,
+            margem_liquida_percent REAL,
+            caixa_operacional_sobre_receita_percent REAL,
+            conversao_caixa_percent REAL,
+            fluxo_caixa_livre REAL,
+            participacao_caixa_percent REAL
+        );
+        """
+    )
+
+    cursor.execute(
+        """
+        CREATE TABLE IF NOT EXISTS financial_evolution (
+            NomeFantasia TEXT,
+            data_fechamento TEXT,
+            crescimento_receita_yoy_percent REAL,
+            crescimento_lucro_yoy_percent REAL,
+            crescimento_ebit_yoy_percent REAL,
+            crescimento_ativo_yoy_percent REAL,
+            crescimento_pl_yoy_percent REAL,
+            crescimento_caixa_operacional_yoy_percent REAL,
+            variacao_endividamento_yoy_pp REAL,
+            margem_liquida_media_movel_percent REAL
+        );
+        """
     )
 
     conn.commit()
-    logger.info("Tabelas de samples criadas com sucesso.")
+    logger.info("Tabelas criadas com sucesso.")
 
 
 def load_to_sqlite(df: pd.DataFrame, table_name: str, conn, if_exists="replace"):
@@ -136,14 +129,14 @@ def load_to_sqlite(df: pd.DataFrame, table_name: str, conn, if_exists="replace")
 
 
 def run_load():
-    """Executa a etapa Load: carrega todos os samples no banco."""
-    # Ler os samples
-    df_company = load_csv(DIM_COMPANY_SAMPLE)
-    df_account = load_csv(DIM_ACCOUNT_SAMPLE)
-    df_fact = load_csv(FACT_BALANCE_SAMPLE)
-    df_wide = load_csv(WIDE_TABLE_SAMPLE)
-    df_indicators = load_csv(FINANCIAL_INDICATORS_SAMPLE)
-    df_evolution = load_csv(FINANCIAL_EVOLUTION_SAMPLE)
+    """Executa a etapa Load: carrega dados processados no banco."""
+    # Ler arquivos das etapas
+    df_company = load_csv(os.path.join(DIM_FACT_PATH, "dim_company.csv"))
+    df_account = load_csv(os.path.join(DIM_FACT_PATH, "dim_account.csv"))
+    df_fact = load_csv(os.path.join(DIM_FACT_PATH, "fact_balance.csv"))
+    df_wide = load_csv(os.path.join(ANALYTICS_PATH, "wide_table.csv"))
+    df_indicators = load_csv(os.path.join(ANALYTICS_PATH, "financial_indicators.csv"))
+    df_evolution = load_csv(os.path.join(ANALYTICS_PATH, "financial_evolution.csv"))
 
     # Conectar/criar banco
     conn = connect_db(DB_PATH)
@@ -151,12 +144,12 @@ def run_load():
     # Criar tabelas
     create_tables(conn)
 
-    # Carregar samples
-    load_to_sqlite(df_company, "dim_company_sample", conn)
-    load_to_sqlite(df_account, "dim_account_sample", conn)
-    load_to_sqlite(df_fact, "fact_balance_sample", conn)
-    load_to_sqlite(df_wide, "wide_table_sample", conn)
-    load_to_sqlite(df_indicators, "financial_indicators_sample", conn)
-    load_to_sqlite(df_evolution, "financial_evolution_sample", conn)
+    # Carregar dados
+    load_to_sqlite(df_company, "dim_company", conn)
+    load_to_sqlite(df_account, "dim_account", conn)
+    load_to_sqlite(df_fact, "fact_balance", conn)
+    load_to_sqlite(df_wide, "wide_table", conn)
+    load_to_sqlite(df_indicators, "financial_indicators", conn)
+    load_to_sqlite(df_evolution, "financial_evolution", conn)
 
     conn.close()
