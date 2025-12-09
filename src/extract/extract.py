@@ -3,7 +3,6 @@ import pandas as pd
 from utils.logger import logger
 
 RAW_DIR = "../data/raw"
-PROCESSED_PATH = "../data/processed/balancos_processed.csv"
 
 
 def load_raw_data(csv_path: str) -> pd.DataFrame:
@@ -11,13 +10,21 @@ def load_raw_data(csv_path: str) -> pd.DataFrame:
     Carrega o CSV bruto e retorna um DataFrame.
     - Verifica se o arquivo existe.
     - Converte em DataFrame padronizado
+    - Tenta ler em UTF-8, se falhar usa latin1.
+
     """
     if not os.path.exists(csv_path):
         logger.error(f"Arquivo não encontrado: {csv_path}")
         raise FileNotFoundError(f"Arquivo não encontrado: {csv_path}")
 
     logger.info(f"Lendo arquivo bruto: {csv_path}")
-    df = pd.read_csv(csv_path, sep=";", encoding="utf-8", low_memory=False)
+
+    try:
+        df = pd.read_csv(csv_path, sep=";", encoding="utf-8", low_memory=False)
+    except UnicodeDecodeError:
+        logger.warning("Falha ao ler em UTF-8. Tentando latin1...")
+        df = pd.read_csv(csv_path, sep=";", encoding="latin1", low_memory=False)
+
     logger.info(f"Linhas carregadas: {len(df)}")
 
     return df
