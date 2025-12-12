@@ -1,4 +1,5 @@
-# 🧩 Financial Statements ETL Pipeline — Summary (EN)
+# 🧩 ETL Pipeline for Financial Statements
+
 > 🔗 [Versão em Português](README.md)
 
 This project implements an end-to-end **ETL pipeline for real financial statements** from the **Top 10 Brazilian retail companies by revenue (2024)**.
