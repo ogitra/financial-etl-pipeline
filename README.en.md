@@ -25,5 +25,8 @@ It covers SQL extraction, data standardization, dimensional modeling, KPI calcul
 - Professional project structure and reproducibility
 
 ---
+**Main links:**
+🔗 [SQL Query](sql/top10_empresas_comercio_receita_2024.sql) |
+🔗 [Pipeline Orchestrator](src/pipeline.py)
 
-For the full project documentation (PT-BR), see the main README.
+For the full project documentation (PT-BR), see the main [README](README.md)

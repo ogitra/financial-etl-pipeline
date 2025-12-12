@@ -39,10 +39,9 @@ O pipeline padroniza dados contábeis, modela dimensões e fato e calcula **indi
 ---
 
 ## ✨  Destaque: Query SQL
+🔗 [Query SQL](sql/top10_empresas_comercio_receita_2024.sql)
 
 A extração dos dados foi feita a partir de uma **query SQL completa, construída para filtrar, agregar e preparar as demonstrações financeiras antes mesmo do ETL em Python**.
-A versão final encontra-se em: `sql\top10_empresas_comercio_receita_2024.sql`
-
 A query utiliza:
 
 - **CTEs** para modularizar etapas (filtro por setor, ranking de receita, base contábil).
@@ -103,6 +102,7 @@ WITH balancos_normalizados AS (
 ```
 ---
 ## ✨  Destaque — Python
+🔗 [Orquestrador Pipeline](src/pipeline.py)
 
 O pipeline utiliza Python de forma modular e organizada, cobrindo práticas valorizadas no mercado de dados:
 
