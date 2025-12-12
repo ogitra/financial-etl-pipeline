@@ -1,28 +1,28 @@
-# 🧩 ETL Pipeline for Financial Statements
-
+# 🧩 Financial Statements ETL Pipeline — Summary (EN)
 > 🔗 [Versão em Português](README.md)
 
-Project based on **real financial statement data** from the **Top 10 Brazilian commerce companies by revenue in 2024**.
-> The pipeline standardizes accounting data, models dimensions and fact tables, and calculates **key financial indicators**, such as:
-
-- Liquidity (current, quick, and cash ratio)
-- Profitability (ROE, ROA, and margins)
-- Capital structure and leverage
-- Cash generation and conversion
-- Year-over-year (YoY) financial evolution
+This project implements an end-to-end **ETL pipeline for real financial statements** from the **Top 10 Brazilian retail companies by revenue (2024)**.
+It covers SQL extraction, data standardization, dimensional modeling, KPI calculation, and loading into a local Data Warehouse.
 
 ---
 
-## ▣ Overview
+## ⚡ Quick Overview
 
-This project implements a complete **ETL (Extract, Transform, Load)** pipeline applied to corporate financial data.
+**What the pipeline does:**
+- Extracts structured financial data using an advanced SQL query (CTEs + Window Functions).
+- Standardizes and transforms raw data into a dimensional model (fact + dimensions).
+- Calculates key financial indicators (liquidity, profitability, leverage, cash metrics).
+- Builds a consolidated analytical table for visualization and exploration.
+- Loads all curated data into a SQLite Data Warehouse.
 
-The dataset is intentionally reduced (Top 10 companies) to simplify reading, technical evaluation, and architectural understanding.
+**Skills demonstrated:**
+- Advanced SQL (CTEs, window functions, conditional filters, aggregations)
+- Python + Pandas for data cleaning, transformation, and modeling
+- Dimensional modeling (company, account, date dimensions + financial fact table)
+- Modular ETL design (extract → transform → analytics → load)
+- Financial logic (ROE, ROA, margins, liquidity, leverage)
+- Professional project structure and reproducibility
 
-The main goals are to demonstrate:
+---
 
-- Data extraction from SQL
-- Standardization and dimensional modeling
-- Construction of analytical tables
-- Calculation of financial indicators
-- Loading into a SQLite Data Warehouse
+For the full project documentation (PT-BR), see the main README.
