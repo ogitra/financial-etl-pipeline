@@ -2,7 +2,7 @@ import pandas as pd
 from utils.logger import logger
 
 
-def wide_table(df: pd.DataFrame) -> pd.DataFrame:
+def run_wide_table(df: pd.DataFrame) -> pd.DataFrame:
     """
     Converte o DataFrame (long format) para formato wide, onde cada conta contábil
     vira uma coluna e cada linha representa empresa + data.

@@ -3,23 +3,8 @@ import sqlite3
 import pandas as pd
 from utils.logger import logger
 
-# Caminhos das etapas do pipeline
-EXTRACT_PATH = "../data/raw/extract"
-STD_PATH = "../data/processed/standardized"
-DIM_FACT_PATH = "../data/processed/dimensions_fact"
-ANALYTICS_PATH = "../data/processed/analytics"
-
 # Caminho do banco
 DB_PATH = "../data/warehouse/balance_dw.db"
-
-
-def load_csv(path: str) -> pd.DataFrame:
-    """Lê um arquivo CSV e retorna DataFrame."""
-    if not os.path.exists(path):
-        raise FileNotFoundError(f"Arquivo não encontrado: {path}")
-
-    logger.info(f"Lendo CSV: {path}")
-    return pd.read_csv(path)
 
 
 def connect_db(db_path: str):
@@ -122,34 +107,19 @@ def create_tables(conn):
     logger.info("Tabelas criadas com sucesso.")
 
 
-def load_to_sqlite(df: pd.DataFrame, table_name: str, conn, if_exists="replace"):
+def write_table_sqlite(df: pd.DataFrame, table_name: str, conn, if_exists="replace"):
     """Insere dados de um DataFrame no SQLite."""
     df.to_sql(table_name, conn, if_exists=if_exists, index=False)
     logger.info(f"Tabela carregada: {table_name} ({len(df)} registros)")
 
 
-def run_load():
+def run_load_sqlite(datasets: dict):
     """Executa a etapa Load: carrega dados processados no banco."""
-    # Ler arquivos das etapas
-    df_company = load_csv(os.path.join(DIM_FACT_PATH, "dim_company.csv"))
-    df_account = load_csv(os.path.join(DIM_FACT_PATH, "dim_account.csv"))
-    df_fact = load_csv(os.path.join(DIM_FACT_PATH, "fact_balance.csv"))
-    df_wide = load_csv(os.path.join(ANALYTICS_PATH, "wide_table.csv"))
-    df_indicators = load_csv(os.path.join(ANALYTICS_PATH, "financial_indicators.csv"))
-    df_evolution = load_csv(os.path.join(ANALYTICS_PATH, "financial_evolution.csv"))
 
-    # Conectar/criar banco
     conn = connect_db(DB_PATH)
-
-    # Criar tabelas
     create_tables(conn)
 
-    # Carregar dados
-    load_to_sqlite(df_company, "dim_company", conn)
-    load_to_sqlite(df_account, "dim_account", conn)
-    load_to_sqlite(df_fact, "fact_balance", conn)
-    load_to_sqlite(df_wide, "wide_table", conn)
-    load_to_sqlite(df_indicators, "financial_indicators", conn)
-    load_to_sqlite(df_evolution, "financial_evolution", conn)
+    for table_name, df in datasets.items():
+        write_table_sqlite(df, table_name, conn)
 
     conn.close()

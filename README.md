@@ -5,23 +5,27 @@
 
 ## ⚡ Resumo Rápido do Projeto e Habilidades Demonstradas
 
-**Este projeto demonstra, de ponta a ponta, um pipeline ETL aplicado a dados financeiros reais — abrangendo desde consultas SQL até a modelagem dimensional e o cálculo de indicadores, culminando na carga em um Data Warehouse.**
+**Este projeto demonstra, de ponta a ponta, um pipeline ETL aplicado a dados financeiros reais — abrangendo desde consultas SQL até a modelagem dimensional e o cálculo de indicadores, culminando na carga em um Data Warehouse (SQLite) e em um Data Lake (Amazon S3).**
+
 
 **O que o pipeline faz:**
 - Extrai dados contábeis estruturados via SQL robusto (CTEs + Window Functions).
 - Padroniza e transforma dados brutos em modelos dimensionais (dimensões + fato).
-- Calcula indicadores financeiros essenciais (liquidez, rentabilidade, endividamento, caixa).
-- Gera tabela analítica consolidada para visualização e análises.
-- Carrega tudo em um Data Warehouse SQLite.
+- Gera tabela analítica consolidada (wide table) para análises.
+- Calcula indicadores financeiros essenciais (liquidez, rentabilidade, endividamento, caixa) e evolução temporal (YoY).
+- Carrega os datasets finais em:
+  - **SQLite** (Data Warehouse local)
+  - **Amazon S3** (Data Lake)
+
 
 **Competências demonstradas:**
 - SQL avançado (CTEs, janelas, agregações, filtros condicionais).
 - Python + Pandas aplicado a dados financeiros.
-- Modelagem dimensional (dim_empresa, dim_conta, fato_financeiro).
-- Arquitetura ETL modular (extract → transform → analytics → load).
-- Lógica financeira aplicada (ROE, ROA, margens, liquidez, endividamento).
+- Modelagem dimensional (dim_company, dim_account, fact_balance).
+- Transformações analíticas (wide_table, indicadores e evolução).
+- Integração com AWS (S3) como destino de dados.
+- Arquitetura modular (extract → transform → load).
 - Organização profissional de projeto (estrutura, versionamento, reprodutibilidade).
-
 ---
 
 # 📊 Projeto — Pipeline ETL de Demonstrações Financeiras
@@ -107,7 +111,7 @@ WITH balancos_normalizados AS (
 O pipeline utiliza Python de forma modular e organizada, cobrindo práticas valorizadas no mercado de dados:
 
 ### ✓ Arquitetura e organização
-- Estrutura em **módulos independentes** (`extract`, `transform`, `analytics`, `load`)
+- Estrutura em **módulos independentes** (`extract`, `transform`, `load`)
 - Script **orquestrador** (`pipeline.py`)
 - Separação clara de responsabilidades (clean code aplicado)
 
@@ -115,24 +119,16 @@ O pipeline utiliza Python de forma modular e organizada, cobrindo práticas valo
 - Uso de **Pandas** para padronização, limpeza e transformação
 - Conversão de tipos, parsing de datas e validação de schema
 - Criação de **tabelas fato** e **dimensões** a partir de dataframes
+- Camada analítica dentro do Transform (transform/analytics)
 
-### ✓ Boas práticas de Engenharia de Dados
-- Diretórios por estágio (`raw`, `extract`, `standardized`, …)
-- Estrutura de *staging → curated → analytics*
-- Scripts reutilizáveis dentro de `utils/`
-- Lógica de transformação separada do código de carga
-
-### ✓ Integração com banco de dados
-- Escrita das tabelas finais em **SQLite** (Data Warehouse local)
-- Criação de tabelas e inserção de dados via Pandas + SQL engine
+### ✓ Integração com destino de dados
+- SQLite (Data Warehouse local) para persistir as tabelas finais
+- Amazon S3 (Data Lake) para armazenar os datasets finais como objetos CSV
 - Automação de todo o fluxo com um único comando (`python pipeline.py`)
-
-Esses pontos refletem práticas consideradas padrão em pipelines ETL de Data Engineering, mesmo em ambientes maiores (AWS, GCP, Databricks), só adaptadas para um projeto local.
-
-
 
 
 ---
+
 
 ## 🧱 Arquitetura do Pipeline
 
@@ -140,26 +136,51 @@ Esses pontos refletem práticas consideradas padrão em pipelines ETL de Data En
 Query SQL (CTEs + Window Functions + Filtros Anuais)
    |
    v
-CSV Bruto
+CSV Bruto (sample versionado em data/raw)
    |
    v
-Extract
+Extract (DataFrame)
    |
    v
 Transform
-   |-- Dados Padronizados
-   |-- Dimensões e Fato
-   |
-   v
-Analytics
-   |-- Tabela Wide
-   |-- Indicadores Financeiros
-   |-- Evolução Temporal
+   |-- Padronização (standardize)
+   |-- Modelagem (dim_company, dim_account, fact_balance)
+   |-- Wide Table (wide_table)
+   |-- Analytics (KPIs e evolução)
    |
    v
 Load (SQLite Data Warehouse)
+   |-- SQLite (DW local)
+   |-- S3 (Data Lake)
 
 ```
+
+---
+
+## 📦 Outputs gerados
+ O pipeline gera os seguintes datasets finais:
+
+- dim_company
+- dim_account
+- fact_balance
+- wide_table
+- financial_indicators
+- financial_evolution
+
+## 🗄️ SQLite (Data Warehouse local)
+
+O arquivo é gerado automaticamente em:
+data/warehouse/balance_dw.db (não versionado no Git)
+
+## ☁️ Amazon S3 (Data Lake)
+
+Os datasets são enviados como CSV para o bucket configurado no loader do S3, organizados por camadas:
+processed/dimensions/dim_company/dim_company.csv
+processed/dimensions/dim_account/dim_account.csv
+processed/facts/fact_balance/fact_balance.csv
+processed/wide/wide_table.csv
+analytics/financial_indicators.csv
+analytics/financial_evolution.csv
 
 ---
 
@@ -168,14 +189,9 @@ Load (SQLite Data Warehouse)
 ```text
 data/
 ├── raw/
-│   └── top10_empresas_comercio_receita_2024.csv
-├── processed/
-│   ├── extract/
-│   ├── standardized/
-│   ├── dimensions_fact/
-│   └── analytics/
+│   └── top10_empresas_comercio_receita_2024.csv   # sample (input)
 ├── warehouse/
-│   └── balance_dw.db
+│   └── balance_dw.db                             # gerado em runtime (não versionado)
 
 sql/
 └── top10_empresas_comercio_receita_2024.sql
@@ -183,8 +199,10 @@ sql/
 src/
 ├── extract/
 ├── transform/
-├── analytics/
+│   └── analytics/
 ├── load/
+│   ├── sqlite_loader.py
+│   └── s3_loader.py
 ├── utils/
 └── pipeline.py
 ```
@@ -201,15 +219,12 @@ src/
 - Padronização de colunas e tipos
 - Criação de dimensões (empresa, conta, data)
 - Construção da tabela fato
-
-### 3. Analytics
 - Geração de tabela wide
-- Cálculo de KPIs financeiros
-- Análise temporal (YoY)
+- Cálculo de indicadores financeiros e evolução temporal
 
-### 4. Load
+### 3. Load
 - Carga em SQLite
-- Tabelas organizadas por tema (dimensões, fato, analytics)
+- Upload dos datasets finais para o S3 da AWS
 
 ---
 
@@ -223,7 +238,7 @@ Este projeto pode ser reproduzido localmente utilizando o arquivo CSV disponibil
 ### Pré-requisitos
 - Python 3.10 ou superior
 - Git
-
+- (Opcional para S3) AWS CLI configurado e bucket S3 criado
 ### Passo a passo
 
 #### 1. Clone o repositório
@@ -246,7 +261,16 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-#### 4. Execute o pipeline ETL
+#### 4. (Opcional) Configurar AWS para upload no S3
+- Crie um bucket S3
+- Crie um usuário IAM com permissão mínima (s3:PutObject e s3:ListBucket)
+- Configure as credenciais localmente:
+
+*Se você quiser executar apenas o SQLite (sem AWS), basta comentar a chamada do loader S3 no pipeline.py.*
+
+
+
+#### 5. Execute o pipeline ETL
 
 O pipeline deve ser executado **a partir do diretório `src`**:
 
@@ -262,10 +286,9 @@ Isso executará todas as etapas do pipeline:
 
 - Extract
 - Transform
-- Analytics
-- Load (SQLite)
+- Load (SQLite + S3)
 
-Gerando as tabelas separadas por pastas.
+
 
 ---
 

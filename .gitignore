@@ -1,9 +1,16 @@
 # Virtual environment
 venv/
+.venv/
+env/
+ENV/
 
 # Python cache
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
 
 # Databases
 *.db
@@ -11,3 +18,5 @@ __pycache__/
 # OS files
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
